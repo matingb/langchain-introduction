@@ -4,14 +4,9 @@ from dotenv import load_dotenv
 from langchain.agents import create_agent
 from langchain_groq import ChatGroq
 
+from prompts.prompt import SYSTEM_PROMPT
 
 load_dotenv()
-
-
-def get_weather(city: str) -> str:
-    """Get weather for a given city."""
-    return f"It's always sunny in {city}!"
-
 
 def build_agent():
 
@@ -21,8 +16,7 @@ def build_agent():
     )
     return create_agent(
         model=chat_model,
-        tools=[get_weather],
-        system_prompt="You are a helpful assistant",
+        system_prompt=SYSTEM_PROMPT,
     )
 
 
@@ -34,6 +28,6 @@ if __name__ == "__main__":
 
     agent = build_agent()
     response = agent.invoke(
-        {"messages": [{"role": "user", "content": "what is the weather in sf"}]}
+        {"messages": [{"role": "user", "content": "Quiero armar un equipo de Pokémon para pasar vencer al primer gimnasio de Rojo Fuego"}]}
     )
-    print(response)
+    print(response["messages"][-1].content)
