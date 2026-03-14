@@ -1,0 +1,5 @@
+{
+  "name": "FireRed Strategy Planner",
+  "description": "A frontend app to select a team of Pokemon and a Gym Leader to battle in Pokemon FireRed.",
+  "requestFramePermissions": []
+}
