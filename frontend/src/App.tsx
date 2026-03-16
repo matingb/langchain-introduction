@@ -26,8 +26,6 @@ export default function App() {
       leader_to_beat: selectedLeader
     };
 
-    console.log("Sending to API:", payload);
-
     try {
       const response = await fetch("http://localhost:8000/recommend-team", {
         method: "POST",
@@ -51,8 +49,6 @@ export default function App() {
   };
 
   const resetSelection = () => {
-    setSelectedLeader(null);
-    setSelectedPokemon([]);
     setResultTeam(null);
   };
 
