@@ -14,6 +14,7 @@ from enums import GymLeader
 from gym_leaders import GYM_LEADER_TEAMS
 from models import TeamRecommendation, TeamRequest
 from prompts.prompt import TEAM_RECOMMENDATION_PROMPT
+from rag import search_docs
 
 
 class RecommendationState(TypedDict):
@@ -34,7 +35,7 @@ def get_gym_leader_team(leader: str) -> List[str]:
         )
     return GYM_LEADER_TEAMS[leader_enum]
 
-TOOLS = [get_gym_leader_team]
+TOOLS = [get_gym_leader_team, search_docs]
 
 
 def build_llm() -> ChatGoogleGenerativeAI:

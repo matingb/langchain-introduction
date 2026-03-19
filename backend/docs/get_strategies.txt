@@ -1,0 +1,169 @@
+=== BROCK (Pewter City Gym Leader) ===
+Type: Rock
+Recommended Minimum Level: 12-14
+
+Team:
+- Geodude (Lv.12)
+- Onix (Lv.14)
+
+Strategy:
+Rock-type Pokémon have high defense but low special defense. Water and Grass moves are extremely effective. Early-game players often struggle due to limited access to strong counters.
+
+Recommended Approach:
+- Use Water-type Pokémon like Squirtle or Grass-types like Bulbasaur.
+- Special attacks are more effective than physical attacks against Brock’s team.
+- Butterfree is a strong alternative due to Confusion (special damage).
+
+Notes:
+Avoid relying on Normal or Flying-type Pokémon, as they are ineffective against Rock-types.
+
+
+=== MISTY (Cerulean City Gym Leader) ===
+Type: Water
+Recommended Minimum Level: 18-21
+
+Team:
+- Staryu (Lv.18)
+- Starmie (Lv.21)
+
+Strategy:
+Water-type Pokémon are fast and can deal strong special damage. Starmie is particularly dangerous due to its speed and recovery moves.
+
+Recommended Approach:
+- Electric-type Pokémon like Pikachu are highly effective.
+- Grass-types also perform well but must handle speed disadvantages.
+- Focus on dealing damage quickly before Starmie can recover.
+
+Notes:
+Avoid Fire, Rock, and Ground Pokémon, as they are weak or ineffective.
+
+
+=== LT. SURGE (Vermilion City Gym Leader) ===
+Type: Electric
+Recommended Minimum Level: 24-26
+
+Team:
+- Voltorb (Lv.21)
+- Pikachu (Lv.18)
+- Raichu (Lv.24)
+
+Strategy:
+Electric Pokémon are fast and can paralyze your team, disrupting strategy.
+
+Recommended Approach:
+- Ground-type Pokémon are immune to Electric attacks.
+- Use Pokémon like Diglett or Dugtrio for strong counters.
+- Prioritize speed to avoid paralysis chains.
+
+Notes:
+Avoid Water and Flying Pokémon.
+
+
+=== ERIKA (Celadon City Gym Leader) ===
+Type: Grass
+Recommended Minimum Level: 29-32
+
+Team:
+- Victreebel (Lv.29)
+- Tangela (Lv.24)
+- Vileplume (Lv.29)
+
+Strategy:
+Grass Pokémon rely on status effects and gradual damage.
+
+Recommended Approach:
+- Fire, Flying, Bug, and Ice-type moves are effective.
+- Use fast attackers to avoid status conditions.
+- Fire-types like Charmeleon are excellent choices.
+
+Notes:
+Watch out for Sleep Powder and Poison effects.
+
+
+=== KOGA (Fuchsia City Gym Leader) ===
+Type: Poison
+Recommended Minimum Level: 37-40
+
+Team:
+- Koffing (Lv.37)
+- Muk (Lv.39)
+- Koffing (Lv.37)
+- Weezing (Lv.43)
+
+Strategy:
+Poison teams focus on status conditions and evasion.
+
+Recommended Approach:
+- Psychic-type Pokémon are highly effective.
+- Use strong special attackers to bypass defense.
+- Avoid prolonged battles due to poison damage.
+
+Notes:
+Bring antidotes or healing items.
+
+
+=== SABRINA (Saffron City Gym Leader) ===
+Type: Psychic
+Recommended Minimum Level: 40-43
+
+Team:
+- Kadabra (Lv.38)
+- Mr. Mime (Lv.37)
+- Venomoth (Lv.38)
+- Alakazam (Lv.43)
+
+Strategy:
+Psychic Pokémon deal high special damage and are very fast.
+
+Recommended Approach:
+- Use Bug, Ghost, or Dark-type moves.
+- Focus on quick knockouts.
+- Physical attackers can be effective if they survive first hit.
+
+Notes:
+Alakazam is extremely dangerous due to speed.
+
+
+=== BLAINE (Cinnabar Island Gym Leader) ===
+Type: Fire
+Recommended Minimum Level: 45-47
+
+Team:
+- Growlithe (Lv.42)
+- Ponyta (Lv.40)
+- Rapidash (Lv.42)
+- Arcanine (Lv.47)
+
+Strategy:
+Fire Pokémon rely on high attack and burn damage.
+
+Recommended Approach:
+- Water, Rock, and Ground moves are effective.
+- Use bulky Pokémon to resist burn damage.
+- Prioritize Arcanine as the main threat.
+
+Notes:
+Avoid Grass and Bug Pokémon.
+
+
+=== GIOVANNI (Viridian City Gym Leader) ===
+Type: Ground
+Recommended Minimum Level: 47-50
+
+Team:
+- Rhyhorn (Lv.45)
+- Dugtrio (Lv.42)
+- Nidoqueen (Lv.44)
+- Nidoking (Lv.45)
+- Rhydon (Lv.50)
+
+Strategy:
+Ground Pokémon deal strong physical damage and have good coverage.
+
+Recommended Approach:
+- Water, Grass, and Ice-type moves are highly effective.
+- Use special attackers to bypass defense.
+- Be cautious of Dugtrio’s speed.
+
+Notes:
+Rhydon is the main threat due to high stats.
