@@ -2,11 +2,23 @@ import React, { useState } from 'react';
 import { POKEMON_LIST, GYM_LEADERS, getPokemonSpriteUrl, getLeaderSpriteUrl } from './data';
 import { Loader2, Swords, RefreshCcw } from 'lucide-react';
 
+type TeamMember = {
+  name: string;
+  reason: string;
+};
+
+type RecommendationResult = {
+  team: TeamMember[];
+  rival_team: string[];
+  strategy: string;
+};
+
 export default function App() {
   const [selectedLeader, setSelectedLeader] = useState<string | null>(null);
   const [selectedPokemon, setSelectedPokemon] = useState<string[]>([]);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [resultTeam, setResultTeam] = useState<string[] | null>(null);
+  const [result, setResult] = useState<RecommendationResult | null>(null);
+  const [activeTeamMember, setActiveTeamMember] = useState<string | null>(null);
 
   const togglePokemon = (pokemon: string) => {
     setSelectedPokemon(prev => 
@@ -37,10 +49,9 @@ export default function App() {
         throw new Error(`Server error: ${response.status}`);
       }
 
-      const data: { team: { name: string; reason: string }[]; strategy: string } =
-        await response.json();
-
-      setResultTeam(data.team.map((member) => member.name));
+      const data: RecommendationResult = await response.json();
+      setResult(data);
+      setActiveTeamMember(null);
     } catch (error) {
       console.error("Error fetching ideal team:", error);
     } finally {
@@ -49,7 +60,42 @@ export default function App() {
   };
 
   const resetSelection = () => {
-    setResultTeam(null);
+    setResult(null);
+    setActiveTeamMember(null);
+  };
+
+  const renderPokemonCard = (
+    pokemonName: string,
+    key: string,
+    detail?: string,
+  ) => {
+    const dexNumber = POKEMON_LIST.indexOf(pokemonName) + 1;
+    const isActive = activeTeamMember === key;
+    const isInteractive = Boolean(detail);
+
+    return (
+      <button
+        key={key}
+        type="button"
+        className={`retro-box pokemon-card p-4 flex flex-col items-center bg-gray-50 ${isActive ? 'active' : ''} ${isInteractive ? 'cursor-pointer' : 'cursor-default'}`}
+        onClick={() => isInteractive && setActiveTeamMember((current) => current === key ? null : key)}
+        onMouseEnter={() => isInteractive && setActiveTeamMember(key)}
+        onMouseLeave={() => isInteractive && setActiveTeamMember((current) => current === key ? null : current)}
+      >
+        <img
+          src={getPokemonSpriteUrl(dexNumber)}
+          alt={pokemonName}
+          className="w-24 h-24 pixelated"
+          style={{ imageRendering: 'pixelated' }}
+        />
+        <span className="text-xs mt-2 uppercase">{pokemonName}</span>
+        {detail ? (
+          <div className="pokemon-card-tooltip">
+            <p className="text-[10px] leading-relaxed normal-case">{detail}</p>
+          </div>
+        ) : null}
+      </button>
+    );
   };
 
   return (
@@ -63,25 +109,74 @@ export default function App() {
         </p>
       </header>
 
-      {resultTeam ? (
-        <div className="retro-box p-6 md:p-10 text-center animate-in fade-in zoom-in duration-300">
-          <h2 className="text-2xl text-red-600 mb-8 uppercase tracking-widest">Ideal Team Found!</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-10">
-            {resultTeam.map((pokemonName) => {
-              const dexNumber = POKEMON_LIST.indexOf(pokemonName) + 1;
-              return (
-                <div key={pokemonName} className="retro-box p-4 flex flex-col items-center bg-gray-50">
-                  <img 
-                    src={getPokemonSpriteUrl(dexNumber)} 
-                    alt={pokemonName}
-                    className="w-24 h-24 pixelated"
-                    style={{ imageRendering: 'pixelated' }}
-                  />
-                  <span className="text-xs mt-2 uppercase">{pokemonName}</span>
-                </div>
-              );
-            })}
+      {result ? (
+        <div className="border-4 border-black bg-white p-4 md:p-8 shadow-[8px_8px_0px_#222] animate-in fade-in zoom-in duration-300">
+          <h2 className="text-2xl text-red-600 mb-8 uppercase tracking-widest text-center">Ideal Team Found!</h2>
+
+          <div className="flex items-center justify-between mb-8 bg-gray-100 p-4 border-4 border-black rounded-lg relative overflow-hidden shadow-inner">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-200 via-white to-red-200 opacity-40"></div>
+
+            <div className="flex flex-col items-center z-10 w-1/3">
+              <img
+                src="https://play.pokemonshowdown.com/sprites/trainers/red-gen3.png"
+                alt="Player"
+                className="h-20 md:h-32 pixelated drop-shadow-md"
+                style={{ imageRendering: 'pixelated' }}
+              />
+              <span className="mt-2 text-[10px] md:text-xs font-bold uppercase bg-blue-600 text-white px-3 py-1 border-2 border-black shadow-[2px_2px_0px_#000]">
+                You
+              </span>
+            </div>
+
+            <div className="z-10 flex flex-col items-center justify-center w-1/3">
+              <span className="text-4xl md:text-6xl text-red-600 font-bold italic retro-title">VS</span>
+            </div>
+
+            <div className="flex flex-col items-center z-10 w-1/3">
+              <img
+                src={getLeaderSpriteUrl(GYM_LEADERS.find((leader) => leader.name === selectedLeader)?.sprite || '')}
+                alt={selectedLeader || 'Leader'}
+                className="h-20 md:h-32 pixelated drop-shadow-md"
+                style={{ imageRendering: 'pixelated' }}
+              />
+              <span className="mt-2 text-[10px] md:text-xs font-bold uppercase bg-red-600 text-white px-3 py-1 border-2 border-black shadow-[2px_2px_0px_#000]">
+                {selectedLeader}
+              </span>
+            </div>
           </div>
+
+          <div className="relative border-4 border-black bg-white p-5 md:p-6 mb-8 shadow-[4px_4px_0px_#222] rounded-lg text-left">
+            <div className="absolute -top-3 left-4 bg-white px-2 text-red-600 font-bold text-[10px] md:text-xs uppercase border-x-2 border-black">
+              Oak&apos;s Advice
+            </div>
+            <p className="text-[10px] md:text-xs leading-loose uppercase mt-2">
+              {result.strategy}
+            </p>
+          </div>
+
+          <section className="mb-10">
+            <div className="flex items-center justify-between gap-4 mb-4">
+              <h3 className="text-sm text-red-600 uppercase">Recommended Team</h3>
+              <span className="text-[9px] md:text-[10px] uppercase text-gray-600">
+                Hover or tap a card to see its role
+              </span>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+              {result.team.map((member, index) =>
+                renderPokemonCard(member.name, `${member.name}-${index}`, member.reason)
+              )}
+            </div>
+          </section>
+
+          <section className="mb-10">
+            <h3 className="text-sm text-red-600 uppercase mb-4 text-left">Rival Team</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+              {result.rival_team.map((pokemonName, index) =>
+                renderPokemonCard(pokemonName, `rival-${pokemonName}-${index}`)
+              )}
+            </div>
+          </section>
+
           <button 
             onClick={resetSelection}
             className="retro-button px-8 py-4 text-sm flex items-center justify-center mx-auto gap-3"
@@ -162,7 +257,7 @@ export default function App() {
       )}
 
       {/* Sticky Bottom Action Bar */}
-      {!resultTeam && (
+      {!result && (
         <div className="fixed bottom-0 left-0 right-0 p-4 bg-white border-t-4 border-black shadow-[0_-4px_0px_rgba(0,0,0,0.1)] z-10 flex justify-center">
           <button
             onClick={handleSubmit}

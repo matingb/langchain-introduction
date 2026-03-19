@@ -1,5 +1,4 @@
 import os
-import re
 from functools import lru_cache
 from typing import Annotated, List, TypedDict
 
@@ -52,7 +51,8 @@ async def structured_output_node(state: RecommendationState) -> RecommendationSt
         HumanMessage(
             content=(
                 "Return the final answer as a structured team recommendation. "
-                "Only choose Pokemon from the provided available list."
+                "Include rival_team with the Gym Leader's Pokemon. "
+                "Only choose Pokemon from the provided available list for team."
             )
         )
     ]
@@ -83,11 +83,6 @@ async def get_team_recommendation(request: TeamRequest) -> TeamRecommendation:
             content=(
                 f"Available Pokémon: {available}\n"
                 f"Gym Leader to beat: {leader}\n\n"
-                "Select the best counter-team of up to 6 Pokémon from the available list and "
-                "explain why each one is useful. "
-                "Evaluate the effectiveness of the team against the Gym Leader's team and the Gym Leader's team against the team."
-                "Evaluate based statistics of the Pokémon and the moves of the Pokémon."
-                "Evaluate based on the weaknesses and strengths of the Pokémon."
             )
         ),
     ]

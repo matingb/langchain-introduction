@@ -29,3 +29,6 @@ class TeamRecommendation(BaseModel):
     strategy: str = Field(
         description="Short overall strategy tip for defeating the Gym Leader."
     )
+    rival_team: List[PokemonName] = Field(
+        description="Pokémon used by the selected Gym Leader in Pokémon FireRed."
+    )
