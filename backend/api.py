@@ -1,13 +1,23 @@
+from contextlib import asynccontextmanager
+
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from llm import get_team_recommendation
 from models import TeamRecommendation, TeamRequest
+from rag import init_vectorstore
 
 load_dotenv()
 
-app = FastAPI(title="PokéCoach API")
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    init_vectorstore()
+    yield
+
+
+app = FastAPI(title="PokéCoach API", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,

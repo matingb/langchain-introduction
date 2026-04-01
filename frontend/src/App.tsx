@@ -64,40 +64,6 @@ export default function App() {
     setActiveTeamMember(null);
   };
 
-  const renderPokemonCard = (
-    pokemonName: string,
-    key: string,
-    detail?: string,
-  ) => {
-    const dexNumber = POKEMON_LIST.indexOf(pokemonName) + 1;
-    const isActive = activeTeamMember === key;
-    const isInteractive = Boolean(detail);
-
-    return (
-      <button
-        key={key}
-        type="button"
-        className={`retro-box pokemon-card p-4 flex flex-col items-center bg-gray-50 ${isActive ? 'active' : ''} ${isInteractive ? 'cursor-pointer' : 'cursor-default'}`}
-        onClick={() => isInteractive && setActiveTeamMember((current) => current === key ? null : key)}
-        onMouseEnter={() => isInteractive && setActiveTeamMember(key)}
-        onMouseLeave={() => isInteractive && setActiveTeamMember((current) => current === key ? null : current)}
-      >
-        <img
-          src={getPokemonSpriteUrl(dexNumber)}
-          alt={pokemonName}
-          className="w-24 h-24 pixelated"
-          style={{ imageRendering: 'pixelated' }}
-        />
-        <span className="text-xs mt-2 uppercase">{pokemonName}</span>
-        {detail ? (
-          <div className="pokemon-card-tooltip">
-            <p className="text-[10px] leading-relaxed normal-case">{detail}</p>
-          </div>
-        ) : null}
-      </button>
-    );
-  };
-
   return (
     <div className="min-h-screen pb-32 p-4 md:p-8 max-w-6xl mx-auto">
       <header className="text-center mb-10 mt-4">
@@ -145,6 +111,77 @@ export default function App() {
             </div>
           </div>
 
+          <div className="relative z-20 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-8">
+            <div className="bg-blue-50 p-3 md:p-4 border-4 border-blue-900 rounded-lg shadow-[4px_4px_0px_#1e3a8a]">
+              <div className="flex justify-between items-end mb-3 border-b-4 border-blue-900 pb-2">
+                <h3 className="text-blue-900 uppercase text-xs md:text-sm font-bold">Your Squad</h3>
+                <span className="text-[8px] text-blue-700 uppercase">Hover for roles</span>
+              </div>
+              <div className="grid grid-cols-2 gap-3 md:gap-4">
+                {result.team.map((member, idx) => {
+                  const dexNumber = POKEMON_LIST.indexOf(member.name) + 1;
+                  const cardKey = `${member.name}-${idx}`;
+                  const isActive = activeTeamMember === cardKey;
+                  return (
+                    <button
+                      key={cardKey}
+                      type="button"
+                      className={`battle-card retro-box group h-28 md:h-32 flex flex-col items-center justify-center bg-white border-blue-900 ${isActive ? 'active' : ''}`}
+                      onClick={() => setActiveTeamMember((current) => current === cardKey ? null : cardKey)}
+                      onMouseEnter={() => setActiveTeamMember(cardKey)}
+                      onMouseLeave={() => setActiveTeamMember((current) => current === cardKey ? null : current)}
+                    >
+                      <div className="flex flex-col items-center justify-center p-2">
+                        <img
+                          src={getPokemonSpriteUrl(dexNumber)}
+                          alt={member.name}
+                          className="w-14 h-14 md:w-16 md:h-16 pixelated"
+                          style={{ imageRendering: 'pixelated' }}
+                        />
+                        <span className="text-[8px] md:text-[10px] mt-2 uppercase text-center leading-tight w-full px-1">
+                          {member.name}
+                        </span>
+                      </div>
+                      <div className="battle-card-tooltip">
+                        <span className="text-[8px] md:text-[9px] leading-tight normal-case text-blue-900 font-bold">
+                          {member.reason}
+                        </span>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="bg-red-50 p-3 md:p-4 border-4 border-red-900 rounded-lg shadow-[4px_4px_0px_#7f1d1d]">
+              <div className="flex justify-between items-end mb-3 border-b-4 border-red-900 pb-2">
+                <h3 className="text-red-900 uppercase text-xs md:text-sm font-bold">Rival Squad</h3>
+                <span className="text-[8px] text-red-700 uppercase">Target</span>
+              </div>
+              <div className="grid grid-cols-2 gap-3 md:gap-4">
+                {result.rival_team.map((pokemonName, idx) => {
+                  const dexNumber = POKEMON_LIST.indexOf(pokemonName) + 1;
+                  return (
+                    <div
+                      key={`${pokemonName}-${idx}`}
+                      className="retro-box h-28 md:h-32 flex flex-col items-center justify-center bg-white p-2 border-red-900"
+                    >
+                      <img
+                        src={getPokemonSpriteUrl(dexNumber)}
+                        alt={pokemonName}
+                        className="w-14 h-14 md:w-16 md:h-16 pixelated"
+                        style={{ imageRendering: 'pixelated' }}
+                      />
+                      <span className="text-[8px] md:text-[10px] mt-2 uppercase text-center leading-tight w-full px-1">
+                        {pokemonName}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+
           <div className="relative border-4 border-black bg-white p-5 md:p-6 mb-8 shadow-[4px_4px_0px_#222] rounded-lg text-left">
             <div className="absolute -top-3 left-4 bg-white px-2 text-red-600 font-bold text-[10px] md:text-xs uppercase border-x-2 border-black">
               Oak&apos;s Advice
@@ -153,29 +190,6 @@ export default function App() {
               {result.strategy}
             </p>
           </div>
-
-          <section className="mb-10">
-            <div className="flex items-center justify-between gap-4 mb-4">
-              <h3 className="text-sm text-red-600 uppercase">Recommended Team</h3>
-              <span className="text-[9px] md:text-[10px] uppercase text-gray-600">
-                Hover or tap a card to see its role
-              </span>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-              {result.team.map((member, index) =>
-                renderPokemonCard(member.name, `${member.name}-${index}`, member.reason)
-              )}
-            </div>
-          </section>
-
-          <section className="mb-10">
-            <h3 className="text-sm text-red-600 uppercase mb-4 text-left">Rival Team</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-              {result.rival_team.map((pokemonName, index) =>
-                renderPokemonCard(pokemonName, `rival-${pokemonName}-${index}`)
-              )}
-            </div>
-          </section>
 
           <button 
             onClick={resetSelection}

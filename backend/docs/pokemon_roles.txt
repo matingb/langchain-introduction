@@ -1,0 +1,3442 @@
+=== BULBASAUR ===
+Primary Role: Special Attacker / Utility
+Nature: Modest
+EVs: HP 252 / SpA 252 / SpD 4
+Item: Miracle Seed
+Ability: Overgrow
+Moves:
+- Razor Leaf
+- Sleep Powder
+- Leech Seed
+- Sludge Bomb
+
+Alternative Role: Bulky Support
+Nature: Calm
+EVs: HP 252 / Def 128 / SpD 128
+Item: Leftovers
+Ability: Overgrow
+Moves:
+- Giga Drain
+- Toxic
+- Leech Seed
+- Protect
+
+=== IVYSAUR ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: HP 252 / SpA 252 / Spe 4
+Item: Miracle Seed
+Ability: Overgrow
+Moves:
+- Razor Leaf
+- Sleep Powder
+- Sludge Bomb
+- Leech Seed
+
+Alternative Role: Defensive Utility
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Overgrow
+Moves:
+- Giga Drain
+- Toxic
+- Leech Seed
+- Reflect
+
+=== VENUSAUR ===
+Primary Role: Special Tank / Utility
+Nature: Calm
+EVs: HP 252 / SpA 128 / SpD 128
+Item: Leftovers
+Ability: Overgrow
+Moves:
+- Giga Drain
+- Sleep Powder
+- Leech Seed
+- Sludge Bomb
+
+Alternative Role: Offensive Mixed
+Nature: Mild
+EVs: SpA 252 / Atk 128 / Spe 128
+Item: Miracle Seed
+Ability: Overgrow
+Moves:
+- SolarBeam
+- Sludge Bomb
+- Earthquake
+- Sunny Day
+
+=== CHARMANDER ===
+Primary Role: Special Attacker
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Charcoal
+Ability: Blaze
+Moves:
+- Flamethrower
+- Dragon Rage
+- Smokescreen
+- Metal Claw
+
+Alternative Role: Mixed Attacker
+Nature: Naive
+EVs: Atk 128 / SpA 128 / Spe 252
+Item: Charcoal
+Ability: Blaze
+Moves:
+- Flamethrower
+- Brick Break
+- Rock Slide
+- Dragon Rage
+
+=== CHARMELEON ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Charcoal
+Ability: Blaze
+Moves:
+- Flamethrower
+- Dragon Claw
+- Brick Break
+- Smokescreen
+
+Alternative Role: Physical Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Charcoal
+Ability: Blaze
+Moves:
+- Slash
+- Brick Break
+- Rock Slide
+- Swords Dance
+
+=== CHARIZARD ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Charcoal
+Ability: Blaze
+Moves:
+- Flamethrower
+- Dragon Claw
+- Fly
+- Brick Break
+
+Alternative Role: Physical Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Charcoal
+Ability: Blaze
+Moves:
+- Fly
+- Earthquake
+- Rock Slide
+- Swords Dance
+
+=== SQUIRTLE ===
+Primary Role: Defensive Utility
+Nature: Bold
+EVs: HP 252 / Def 252 / SpD 4
+Item: Mystic Water
+Ability: Torrent
+Moves:
+- Surf
+- Protect
+- Toxic
+- Ice Beam
+
+Alternative Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Mystic Water
+Ability: Torrent
+Moves:
+- Surf
+- Ice Beam
+- Bite
+- Rain Dance
+
+=== WARTORTLE ===
+Primary Role: Bulky Water
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Mystic Water
+Ability: Torrent
+Moves:
+- Surf
+- Ice Beam
+- Protect
+- Toxic
+
+Alternative Role: Special Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Leftovers
+Ability: Torrent
+Moves:
+- Surf
+- Ice Beam
+- Rain Dance
+- Rest
+
+=== BLASTOISE ===
+Primary Role: Bulky Special Attacker
+Nature: Modest
+EVs: HP 252 / SpA 252 / SpD 4
+Item: Leftovers
+Ability: Torrent
+Moves:
+- Surf
+- Ice Beam
+- Bite
+- Protect
+
+Alternative Role: Defensive Tank
+Nature: Bold
+EVs: HP 252 / Def 252 / SpD 4
+Item: Leftovers
+Ability: Torrent
+Moves:
+- Surf
+- Toxic
+- Protect
+- Rapid Spin
+
+=== CATERPIE ===
+Primary Role: Early Utility
+Nature: Hardy
+EVs: HP 252 / Spe 252 / Atk 4
+Item: None
+Ability: Shield Dust
+Moves:
+- Tackle
+- String Shot
+
+Alternative Role: Sacrifice Setup
+Nature: Hardy
+EVs: HP 252 / Def 252 / SpD 4
+Item: None
+Ability: Shield Dust
+Moves:
+- String Shot
+- Tackle
+
+=== METAPOD ===
+Primary Role: Physical Wall (Early)
+Nature: Impish
+EVs: HP 252 / Def 252 / SpD 4
+Item: None
+Ability: Shed Skin
+Moves:
+- Harden
+
+Alternative Role: Stall (Early)
+Nature: Bold
+EVs: HP 252 / Def 252 / SpD 4
+Item: None
+Ability: Shed Skin
+Moves:
+- Harden
+
+=== BUTTERFREE ===
+Primary Role: Status Support
+Nature: Timid
+EVs: Spe 252 / SpA 252 / HP 4
+Item: Silver Powder
+Ability: Compound Eyes
+Moves:
+- Sleep Powder
+- Psychic
+- Giga Drain
+- Stun Spore
+
+Alternative Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Twisted Spoon
+Ability: Compound Eyes
+Moves:
+- Psychic
+- Giga Drain
+- Silver Wind
+- Sleep Powder
+
+=== WEEDLE ===
+Primary Role: Early Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: None
+Ability: Shield Dust
+Moves:
+- Poison Sting
+- String Shot
+
+Alternative Role: Utility
+Nature: Hardy
+EVs: HP 252 / Spe 252 / Def 4
+Item: None
+Ability: Shield Dust
+Moves:
+- String Shot
+- Poison Sting
+
+=== KAKUNA ===
+Primary Role: Physical Wall (Early)
+Nature: Impish
+EVs: HP 252 / Def 252 / SpD 4
+Item: None
+Ability: Shed Skin
+Moves:
+- Harden
+
+Alternative Role: Stall (Early)
+Nature: Bold
+EVs: HP 252 / Def 252 / SpD 4
+Item: None
+Ability: Shed Skin
+Moves:
+- Harden
+
+=== BEEDRILL ===
+Primary Role: Physical Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Poison Barb
+Ability: Swarm
+Moves:
+- Sludge Bomb
+- Twinneedle
+- Brick Break
+- Swords Dance
+
+Alternative Role: Utility Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Leftovers
+Ability: Swarm
+Moves:
+- Sludge Bomb
+- Toxic
+- Protect
+- Twineedle
+
+=== PIDGEY ===
+Primary Role: Early Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Sharp Beak
+Ability: Keen Eye
+Moves:
+- Gust
+- Quick Attack
+- Sand Attack
+- Tackle
+
+Alternative Role: Utility
+Nature: Hardy
+EVs: HP 252 / Spe 252 / Def 4
+Item: None
+Ability: Keen Eye
+Moves:
+- Sand Attack
+- Gust
+- Quick Attack
+- Tackle
+
+=== PIDGEOTTO ===
+Primary Role: Physical Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Sharp Beak
+Ability: Keen Eye
+Moves:
+- Fly
+- Quick Attack
+- Steel Wing
+- Sand Attack
+
+Alternative Role: Balanced Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Leftovers
+Ability: Keen Eye
+Moves:
+- Fly
+- Return
+- Steel Wing
+- Roost
+
+=== PIDGEOT ===
+Primary Role: Physical Sweeper
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Sharp Beak
+Ability: Keen Eye
+Moves:
+- Fly
+- Return
+- Steel Wing
+- Quick Attack
+
+Alternative Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Twisted Spoon
+Ability: Keen Eye
+Moves:
+- Air Slash (simulado con Wing Attack)
+- Heat Wave (no disponible → usar Flamethrower via tutor no Gen 3 → fallback)
+- Hidden Power Flying
+- Quick Attack
+
+=== RATTATA ===
+Primary Role: Fast Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Silk Scarf
+Ability: Run Away
+Moves:
+- Hyper Fang
+- Quick Attack
+- Dig
+- Focus Energy
+
+Alternative Role: Guts Setup
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Leftovers
+Ability: Guts
+Moves:
+- Facade
+- Quick Attack
+- Dig
+- Substitute
+
+=== RATICATE ===
+Primary Role: Physical Sweeper
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Silk Scarf
+Ability: Guts
+Moves:
+- Hyper Fang
+- Shadow Ball
+- Dig
+- Quick Attack
+
+Alternative Role: Status Abuser
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Leftovers
+Ability: Guts
+Moves:
+- Facade
+- Shadow Ball
+- Substitute
+- Protect
+
+=== SPEAROW ===
+Primary Role: Fast Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Sharp Beak
+Ability: Keen Eye
+Moves:
+- Peck
+- Fury Attack
+- Quick Attack
+- Growl
+
+Alternative Role: Utility
+Nature: Hardy
+EVs: HP 252 / Spe 252 / Atk 4
+Item: None
+Ability: Keen Eye
+Moves:
+- Growl
+- Peck
+- Fury Attack
+- Quick Attack
+
+=== FEAROW ===
+Primary Role: Physical Sweeper
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Sharp Beak
+Ability: Keen Eye
+Moves:
+- Drill Peck
+- Return
+- Steel Wing
+- Quick Attack
+
+Alternative Role: Mixed Attacker
+Nature: Naive
+EVs: Atk 128 / SpA 128 / Spe 252
+Item: Leftovers
+Ability: Keen Eye
+Moves:
+- Drill Peck
+- Hidden Power
+- Steel Wing
+- Quick Attack
+
+=== EKANS ===
+Primary Role: Physical Utility
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Poison Barb
+Ability: Intimidate
+Moves:
+- Sludge Bomb
+- Glare
+- Bite
+- Screech
+
+Alternative Role: Defensive
+Nature: Impish
+EVs: HP 252 / Def 252 / SpD 4
+Item: Leftovers
+Ability: Intimidate
+Moves:
+- Toxic
+- Glare
+- Wrap
+- Protect
+
+=== ARBOK ===
+Primary Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Poison Barb
+Ability: Intimidate
+Moves:
+- Sludge Bomb
+- Earthquake
+- Glare
+- Screech
+
+Alternative Role: Utility Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / SpD 4
+Item: Leftovers
+Ability: Intimidate
+Moves:
+- Toxic
+- Glare
+- Protect
+- Sludge Bomb
+
+=== PIKACHU ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Light Ball
+Ability: Static
+Moves:
+- Thunderbolt
+- Thunder Wave
+- Quick Attack
+- Surf
+
+Alternative Role: Mixed Attacker
+Nature: Naive
+EVs: Atk 128 / SpA 128 / Spe 252
+Item: Light Ball
+Ability: Static
+Moves:
+- Thunderbolt
+- Brick Break
+- Quick Attack
+- Iron Tail
+
+=== RAICHU ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Magnet
+Ability: Static
+Moves:
+- Thunderbolt
+- Thunder Wave
+- Brick Break
+- Quick Attack
+
+Alternative Role: Mixed Attacker
+Nature: Naive
+EVs: Atk 128 / SpA 128 / Spe 252
+Item: Magnet
+Ability: Static
+Moves:
+- Thunderbolt
+- Brick Break
+- Iron Tail
+- Thunder Wave
+
+=== SANDSHREW ===
+Primary Role: Physical Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Soft Sand
+Ability: Sand Veil
+Moves:
+- Dig
+- Slash
+- Defense Curl
+- Sand Attack
+
+Alternative Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Soft Sand
+Ability: Sand Veil
+Moves:
+- Dig
+- Rock Slide
+- Slash
+- Swords Dance
+
+=== SANDSLASH ===
+Primary Role: Physical Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Soft Sand
+Ability: Sand Veil
+Moves:
+- Earthquake
+- Rock Slide
+- Slash
+- Defense Curl
+
+Alternative Role: Physical Sweeper
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Soft Sand
+Ability: Sand Veil
+Moves:
+- Earthquake
+- Rock Slide
+- Swords Dance
+- Slash
+
+=== NIDORAN_F ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Poison Barb
+Ability: Poison Point
+Moves:
+- Sludge Bomb
+- Thunderbolt
+- Double Kick
+- Growl
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Poison Point
+Moves:
+- Toxic
+- Thunder Wave
+- Double Kick
+- Protect
+
+=== NIDORINA ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Poison Barb
+Ability: Poison Point
+Moves:
+- Sludge Bomb
+- Thunderbolt
+- Bite
+- Growl
+
+Alternative Role: Bulky Utility
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Poison Point
+Moves:
+- Toxic
+- Protect
+- Bite
+- Thunder Wave
+
+=== NIDOQUEEN ===
+Primary Role: Mixed Tank
+Nature: Relaxed
+EVs: HP 252 / Atk 128 / SpA 128
+Item: Leftovers
+Ability: Poison Point
+Moves:
+- Earthquake
+- Sludge Bomb
+- Ice Beam
+- Thunderbolt
+
+Alternative Role: Defensive Tank
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Poison Point
+Moves:
+- Earthquake
+- Toxic
+- Ice Beam
+- Protect
+
+=== NIDORAN_M ===
+Primary Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Poison Barb
+Ability: Poison Point
+Moves:
+- Double Kick
+- Sludge Bomb
+- Focus Energy
+- Peck
+
+Alternative Role: Mixed Attacker
+Nature: Naive
+EVs: Atk 128 / SpA 128 / Spe 252
+Item: Poison Barb
+Ability: Poison Point
+Moves:
+- Sludge Bomb
+- Thunderbolt
+- Double Kick
+- Peck
+
+=== NIDORINO ===
+Primary Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Poison Barb
+Ability: Poison Point
+Moves:
+- Sludge Bomb
+- Double Kick
+- Horn Attack
+- Focus Energy
+
+Alternative Role: Mixed
+Nature: Naive
+EVs: Atk 128 / SpA 128 / Spe 252
+Item: Poison Barb
+Ability: Poison Point
+Moves:
+- Sludge Bomb
+- Thunderbolt
+- Horn Attack
+- Double Kick
+
+=== NIDOKING ===
+Primary Role: Mixed Sweeper
+Nature: Naive
+EVs: Atk 128 / SpA 128 / Spe 252
+Item: Leftovers
+Ability: Poison Point
+Moves:
+- Earthquake
+- Sludge Bomb
+- Ice Beam
+- Thunderbolt
+
+Alternative Role: Physical Sweeper
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Soft Sand
+Ability: Poison Point
+Moves:
+- Earthquake
+- Rock Slide
+- Megahorn
+- Brick Break
+
+=== CLEFAIRY ===
+Primary Role: Support
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Cute Charm
+Moves:
+- Thunder Wave
+- Ice Beam
+- Soft-Boiled
+- Sing
+
+Alternative Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Leftovers
+Ability: Cute Charm
+Moves:
+- Thunderbolt
+- Ice Beam
+- Flamethrower
+- Soft-Boiled
+
+=== CLEFABLE ===
+Primary Role: Special Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Leftovers
+Ability: Cute Charm
+Moves:
+- Thunderbolt
+- Ice Beam
+- Soft-Boiled
+- Flamethrower
+
+Alternative Role: Mixed Utility
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Cute Charm
+Moves:
+- Body Slam
+- Thunder Wave
+- Soft-Boiled
+- Flamethrower
+
+=== VULPIX ===
+Primary Role: Special Attacker
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Charcoal
+Ability: Flash Fire
+Moves:
+- Flamethrower
+- Confuse Ray
+- Quick Attack
+- Will-O-Wisp
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Spe 4
+Item: Leftovers
+Ability: Flash Fire
+Moves:
+- Will-O-Wisp
+- Confuse Ray
+- Flamethrower
+- Protect
+
+=== NINETALES ===
+Primary Role: Special Attacker
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Charcoal
+Ability: Flash Fire
+Moves:
+- Flamethrower
+- Confuse Ray
+- Will-O-Wisp
+- Quick Attack
+
+Alternative Role: Special Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Leftovers
+Ability: Flash Fire
+Moves:
+- Flamethrower
+- Toxic
+- Protect
+- Confuse Ray
+
+=== JIGGLYPUFF ===
+Primary Role: Support
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Cute Charm
+Moves:
+- Sing
+- Body Slam
+- Defense Curl
+- Rest
+
+Alternative Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Leftovers
+Ability: Cute Charm
+Moves:
+- Thunderbolt
+- Ice Beam
+- Flamethrower
+- Rest
+
+=== WIGGLYTUFF ===
+Primary Role: Mixed Tank
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Cute Charm
+Moves:
+- Body Slam
+- Thunderbolt
+- Ice Beam
+- Rest
+
+Alternative Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Leftovers
+Ability: Cute Charm
+Moves:
+- Thunderbolt
+- Ice Beam
+- Flamethrower
+- Sing
+
+=== ZUBAT ===
+Primary Role: Utility
+Nature: Jolly
+EVs: Spe 252 / HP 252 / Atk 4
+Item: None
+Ability: Inner Focus
+Moves:
+- Supersonic
+- Bite
+- Wing Attack
+- Confuse Ray
+
+Alternative Role: Fast Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Sharp Beak
+Ability: Inner Focus
+Moves:
+- Wing Attack
+- Bite
+- Confuse Ray
+- Supersonic
+
+=== GOLBAT ===
+Primary Role: Fast Utility
+Nature: Jolly
+EVs: Spe 252 / HP 252 / Atk 4
+Item: Leftovers
+Ability: Inner Focus
+Moves:
+- Confuse Ray
+- Wing Attack
+- Bite
+- Toxic
+
+Alternative Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Sharp Beak
+Ability: Inner Focus
+Moves:
+- Wing Attack
+- Sludge Bomb
+- Bite
+- Confuse Ray
+
+=== ODDISH ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Miracle Seed
+Ability: Chlorophyll
+Moves:
+- Giga Drain
+- Sleep Powder
+- Acid
+- Stun Spore
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Chlorophyll
+Moves:
+- Sleep Powder
+- Stun Spore
+- Giga Drain
+- Protect
+
+=== GLOOM ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Miracle Seed
+Ability: Chlorophyll
+Moves:
+- Giga Drain
+- Sludge Bomb
+- Sleep Powder
+- Stun Spore
+
+Alternative Role: Tank
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Chlorophyll
+Moves:
+- Giga Drain
+- Toxic
+- Sleep Powder
+- Protect
+
+=== VILEPLUME ===
+Primary Role: Special Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Leftovers
+Ability: Chlorophyll
+Moves:
+- Giga Drain
+- Sludge Bomb
+- Sleep Powder
+- Stun Spore
+
+Alternative Role: Offensive
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Miracle Seed
+Ability: Chlorophyll
+Moves:
+- SolarBeam
+- Sludge Bomb
+- Sunny Day
+- Sleep Powder
+
+=== PARAS ===
+Primary Role: Utility
+Nature: Brave
+EVs: HP 252 / Atk 252 / Def 4
+Item: None
+Ability: Effect Spore
+Moves:
+- Spore
+- Leech Life
+- Scratch
+- Stun Spore
+
+Alternative Role: Stall
+Nature: Impish
+EVs: HP 252 / Def 252 / SpD 4
+Item: Leftovers
+Ability: Effect Spore
+Moves:
+- Spore
+- Leech Seed
+- Protect
+- Scratch
+
+=== PARASECT ===
+Primary Role: Physical Utility
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Def 4
+Item: Leftovers
+Ability: Effect Spore
+Moves:
+- Spore
+- Slash
+- Giga Drain
+- Leech Seed
+
+Alternative Role: Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Effect Spore
+Moves:
+- Spore
+- Leech Seed
+- Protect
+- Slash
+
+=== VENONAT ===
+Primary Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: None
+Ability: Compound Eyes
+Moves:
+- Sleep Powder
+- Psybeam
+- Supersonic
+- Stun Spore
+
+Alternative Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Twisted Spoon
+Ability: Compound Eyes
+Moves:
+- Psybeam
+- Giga Drain
+- Sleep Powder
+- Supersonic
+
+=== VENOMOTH ===
+Primary Role: Special Attacker
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Twisted Spoon
+Ability: Shield Dust
+Moves:
+- Psychic
+- Giga Drain
+- Sleep Powder
+- Stun Spore
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Shield Dust
+Moves:
+- Sleep Powder
+- Toxic
+- Giga Drain
+- Protect
+
+=== DIGLETT ===
+Primary Role: Fast Physical Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Soft Sand
+Ability: Arena Trap
+Moves:
+- Dig
+- Rock Slide
+- Slash
+- Sand Attack
+
+Alternative Role: Glass Cannon
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Soft Sand
+Ability: Arena Trap
+Moves:
+- Dig
+- Rock Slide
+- Aerial Ace
+- Substitute
+
+=== DUGTRIO ===
+Primary Role: Fast Physical Sweeper
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Soft Sand
+Ability: Arena Trap
+Moves:
+- Earthquake
+- Rock Slide
+- Aerial Ace
+- Substitute
+
+Alternative Role: Revenge Killer
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Choice Band
+Ability: Arena Trap
+Moves:
+- Earthquake
+- Rock Slide
+- Hidden Power Bug
+- Aerial Ace
+
+=== MEOWTH ===
+Primary Role: Utility Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Silk Scarf
+Ability: Pickup
+Moves:
+- Slash
+- Bite
+- Pay Day
+- Screech
+
+Alternative Role: Support
+Nature: Hardy
+EVs: HP 252 / Spe 252 / Def 4
+Item: None
+Ability: Pickup
+Moves:
+- Pay Day
+- Screech
+- Bite
+- Growl
+
+=== PERSIAN ===
+Primary Role: Fast Physical Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Silk Scarf
+Ability: Limber
+Moves:
+- Return
+- Shadow Ball
+- Bite
+- Screech
+
+Alternative Role: Utility Speed
+Nature: Timid
+EVs: Spe 252 / HP 252 / SpA 4
+Item: Leftovers
+Ability: Limber
+Moves:
+- Fake Out
+- Screech
+- Bite
+- Toxic
+
+=== PSYDUCK ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Mystic Water
+Ability: Damp
+Moves:
+- Surf
+- Ice Beam
+- Confusion
+- Disable
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Damp
+Moves:
+- Surf
+- Toxic
+- Disable
+- Protect
+
+=== GOLDUCK ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Mystic Water
+Ability: Damp
+Moves:
+- Surf
+- Ice Beam
+- Psychic
+- Calm Mind
+
+Alternative Role: Mixed Attacker
+Nature: Mild
+EVs: SpA 252 / Atk 128 / Spe 128
+Item: Leftovers
+Ability: Damp
+Moves:
+- Surf
+- Ice Beam
+- Return
+- Psychic
+
+=== MANKEY ===
+Primary Role: Physical Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Black Belt
+Ability: Vital Spirit
+Moves:
+- Karate Chop
+- Brick Break
+- Rock Slide
+- Leer
+
+Alternative Role: Setup Sweeper
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Black Belt
+Ability: Vital Spirit
+Moves:
+- Brick Break
+- Rock Slide
+- Bulk Up
+- Karate Chop
+
+=== PRIMEAPE ===
+Primary Role: Physical Sweeper
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Black Belt
+Ability: Vital Spirit
+Moves:
+- Brick Break
+- Rock Slide
+- Return
+- Bulk Up
+
+Alternative Role: Revenge Killer
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Choice Band
+Ability: Vital Spirit
+Moves:
+- Cross Chop
+- Rock Slide
+- Return
+- Hidden Power Ghost
+
+=== GROWLITHE ===
+Primary Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Charcoal
+Ability: Intimidate
+Moves:
+- Flamethrower
+- Bite
+- Aerial Ace
+- Roar
+
+Alternative Role: Utility
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Intimidate
+Moves:
+- Will-O-Wisp
+- Flamethrower
+- Roar
+- Protect
+
+=== ARCANINE ===
+Primary Role: Mixed Attacker
+Nature: Mild
+EVs: Atk 128 / SpA 128 / Spe 252
+Item: Charcoal
+Ability: Intimidate
+Moves:
+- Flamethrower
+- ExtremeSpeed
+- Bite
+- Iron Tail
+
+Alternative Role: Physical Sweeper
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Charcoal
+Ability: Intimidate
+Moves:
+- ExtremeSpeed
+- Double-Edge
+- Iron Tail
+- Aerial Ace
+
+=== POLIWAG ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Mystic Water
+Ability: Water Absorb
+Moves:
+- Surf
+- Ice Beam
+- Hypnosis
+- Rain Dance
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Water Absorb
+Moves:
+- Hypnosis
+- Surf
+- Toxic
+- Protect
+
+=== POLIWHIRL ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Mystic Water
+Ability: Water Absorb
+Moves:
+- Surf
+- Ice Beam
+- Hypnosis
+- Rain Dance
+
+Alternative Role: Defensive
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Water Absorb
+Moves:
+- Surf
+- Toxic
+- Hypnosis
+- Protect
+
+=== POLIWRATH ===
+Primary Role: Mixed Tank
+Nature: Relaxed
+EVs: HP 252 / Atk 128 / SpA 128
+Item: Leftovers
+Ability: Water Absorb
+Moves:
+- Surf
+- Brick Break
+- Ice Beam
+- Hypnosis
+
+Alternative Role: Physical Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Water Absorb
+Moves:
+- Brick Break
+- Bulk Up
+- Hypnosis
+- Rest
+
+=== ABRA ===
+Primary Role: Glass Cannon (Late)
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Twisted Spoon
+Ability: Synchronize
+Moves:
+- Psychic
+- Calm Mind
+- Reflect
+- Recover
+
+Alternative Role: Setup Sweeper
+Nature: Modest
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Twisted Spoon
+Ability: Synchronize
+Moves:
+- Psychic
+- Calm Mind
+- Substitute
+- Recover
+
+=== KADABRA ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Twisted Spoon
+Ability: Synchronize
+Moves:
+- Psychic
+- Calm Mind
+- Recover
+- Reflect
+
+Alternative Role: Glass Cannon
+Nature: Modest
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Twisted Spoon
+Ability: Synchronize
+Moves:
+- Psychic
+- Fire Punch
+- Ice Punch
+- ThunderPunch
+
+=== ALAKAZAM ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Twisted Spoon
+Ability: Synchronize
+Moves:
+- Psychic
+- Calm Mind
+- Recover
+- Ice Punch
+
+Alternative Role: Coverage Sweeper
+Nature: Modest
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Leftovers
+Ability: Synchronize
+Moves:
+- Psychic
+- Fire Punch
+- Ice Punch
+- ThunderPunch
+
+=== MACHOP ===
+Primary Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Black Belt
+Ability: Guts
+Moves:
+- Karate Chop
+- Rock Slide
+- Bulk Up
+- Focus Energy
+
+Alternative Role: Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Guts
+Moves:
+- Bulk Up
+- Rock Slide
+- Karate Chop
+- Rest
+
+=== MACHOKE ===
+Primary Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Black Belt
+Ability: Guts
+Moves:
+- Cross Chop
+- Rock Slide
+- Bulk Up
+- Strength
+
+Alternative Role: Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Guts
+Moves:
+- Bulk Up
+- Cross Chop
+- Rest
+- Rock Slide
+
+=== MACHAMP ===
+Primary Role: Physical Sweeper
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Black Belt
+Ability: Guts
+Moves:
+- Cross Chop
+- Rock Slide
+- Bulk Up
+- Earthquake
+
+Alternative Role: Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Guts
+Moves:
+- Bulk Up
+- Cross Chop
+- Rest
+- Rock Slide
+
+=== BELLSPROUT ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Miracle Seed
+Ability: Chlorophyll
+Moves:
+- Giga Drain
+- Sleep Powder
+- Acid
+- Stun Spore
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Chlorophyll
+Moves:
+- Sleep Powder
+- Stun Spore
+- Giga Drain
+- Protect
+
+=== WEEPINBELL ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Miracle Seed
+Ability: Chlorophyll
+Moves:
+- Giga Drain
+- Sludge Bomb
+- Sleep Powder
+- Stun Spore
+
+Alternative Role: Tank
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Chlorophyll
+Moves:
+- Giga Drain
+- Toxic
+- Sleep Powder
+- Protect
+
+=== VICTREEBEL ===
+Primary Role: Mixed Attacker
+Nature: Mild
+EVs: SpA 252 / Atk 128 / Spe 128
+Item: Miracle Seed
+Ability: Chlorophyll
+Moves:
+- Giga Drain
+- Sludge Bomb
+- Sleep Powder
+- Razor Leaf
+
+Alternative Role: Sun Sweeper
+Nature: Modest
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Miracle Seed
+Ability: Chlorophyll
+Moves:
+- SolarBeam
+- Sludge Bomb
+- Sunny Day
+- Sleep Powder
+
+=== TENTACOOL ===
+Primary Role: Special Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / Spe 4
+Item: Mystic Water
+Ability: Clear Body
+Moves:
+- Surf
+- Toxic
+- Barrier
+- Supersonic
+
+Alternative Role: Utility
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Clear Body
+Moves:
+- Surf
+- Toxic
+- Protect
+- Ice Beam
+
+=== TENTACRUEL ===
+Primary Role: Special Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / Spe 4
+Item: Leftovers
+Ability: Clear Body
+Moves:
+- Surf
+- Ice Beam
+- Toxic
+- Protect
+
+Alternative Role: Special Attacker
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Mystic Water
+Ability: Clear Body
+Moves:
+- Surf
+- Ice Beam
+- Sludge Bomb
+- Barrier
+
+=== GEODUDE ===
+Primary Role: Physical Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Hard Stone
+Ability: Rock Head
+Moves:
+- Rock Throw
+- Magnitude
+- Defense Curl
+- Selfdestruct
+
+Alternative Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Hard Stone
+Ability: Rock Head
+Moves:
+- Rock Throw
+- Earthquake
+- Selfdestruct
+- Defense Curl
+
+=== GRAVELER ===
+Primary Role: Physical Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Hard Stone
+Ability: Rock Head
+Moves:
+- Rock Slide
+- Earthquake
+- Defense Curl
+- Selfdestruct
+
+Alternative Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Hard Stone
+Ability: Rock Head
+Moves:
+- Rock Slide
+- Earthquake
+- Explosion
+- Defense Curl
+
+=== GOLEM ===
+Primary Role: Physical Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Rock Head
+Moves:
+- Rock Slide
+- Earthquake
+- Explosion
+- Defense Curl
+
+Alternative Role: Physical Sweeper
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Hard Stone
+Ability: Rock Head
+Moves:
+- Rock Slide
+- Earthquake
+- Explosion
+- Double-Edge
+
+=== PONYTA ===
+Primary Role: Physical Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Charcoal
+Ability: Run Away
+Moves:
+- Flame Wheel
+- Stomp
+- Double Kick
+- Agility
+
+Alternative Role: Special Attacker
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Charcoal
+Ability: Run Away
+Moves:
+- Flamethrower
+- Sunny Day
+- Fire Blast
+- Quick Attack
+
+=== RAPIDASH ===
+Primary Role: Physical Sweeper
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Charcoal
+Ability: Flash Fire
+Moves:
+- Fire Blast
+- Double-Edge
+- Iron Tail
+- Agility
+
+Alternative Role: Mixed Attacker
+Nature: Naive
+EVs: Atk 128 / SpA 128 / Spe 252
+Item: Charcoal
+Ability: Flash Fire
+Moves:
+- Flamethrower
+- Double-Edge
+- Iron Tail
+- Sunny Day
+
+=== SLOWPOKE ===
+Primary Role: Special Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Own Tempo
+Moves:
+- Surf
+- Psychic
+- Yawn
+- Slack Off
+
+Alternative Role: Defensive Tank
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Own Tempo
+Moves:
+- Surf
+- Psychic
+- Yawn
+- Protect
+
+=== SLOWBRO ===
+Primary Role: Physical Tank
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Own Tempo
+Moves:
+- Surf
+- Psychic
+- Calm Mind
+- Slack Off
+
+Alternative Role: Special Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Leftovers
+Ability: Own Tempo
+Moves:
+- Surf
+- Psychic
+- Calm Mind
+- Slack Off
+
+=== MAGNEMITE ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Magnet
+Ability: Magnet Pull
+Moves:
+- Thunderbolt
+- SonicBoom
+- Thunder Wave
+- Supersonic
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Magnet Pull
+Moves:
+- Thunder Wave
+- Toxic
+- Thunderbolt
+- Protect
+
+=== MAGNETON ===
+Primary Role: Special Sweeper
+Nature: Modest
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Magnet
+Ability: Magnet Pull
+Moves:
+- Thunderbolt
+- Thunder Wave
+- Hidden Power Ice
+- Substitute
+
+Alternative Role: Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Leftovers
+Ability: Magnet Pull
+Moves:
+- Thunderbolt
+- Toxic
+- Protect
+- Thunder Wave
+
+=== FARFETCHD ===
+Primary Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Stick
+Ability: Keen Eye
+Moves:
+- Slash
+- Aerial Ace
+- Swords Dance
+- Steel Wing
+
+Alternative Role: Utility
+Nature: Jolly
+EVs: Spe 252 / HP 252 / Atk 4
+Item: Stick
+Ability: Keen Eye
+Moves:
+- Swords Dance
+- Aerial Ace
+- Slash
+- Sand Attack
+
+=== DODUO ===
+Primary Role: Physical Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Sharp Beak
+Ability: Run Away
+Moves:
+- Peck
+- Tri Attack
+- Pursuit
+- Quick Attack
+
+Alternative Role: Utility
+Nature: Hardy
+EVs: HP 252 / Spe 252 / Atk 4
+Item: None
+Ability: Run Away
+Moves:
+- Growl
+- Peck
+- Pursuit
+- Quick Attack
+
+=== DODRIO ===
+Primary Role: Physical Sweeper
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Sharp Beak
+Ability: Run Away
+Moves:
+- Drill Peck
+- Return
+- Tri Attack
+- Quick Attack
+
+Alternative Role: Glass Cannon
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Choice Band
+Ability: Run Away
+Moves:
+- Drill Peck
+- Return
+- Tri Attack
+- Pursuit
+
+=== SEEL ===
+Primary Role: Special Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Mystic Water
+Ability: Thick Fat
+Moves:
+- Surf
+- Ice Beam
+- Rest
+- Sleep Talk
+
+Alternative Role: Utility
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Thick Fat
+Moves:
+- Surf
+- Toxic
+- Protect
+- Ice Beam
+
+=== DEWGONG ===
+Primary Role: Special Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Leftovers
+Ability: Thick Fat
+Moves:
+- Surf
+- Ice Beam
+- Rest
+- Sleep Talk
+
+Alternative Role: Offensive
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Mystic Water
+Ability: Thick Fat
+Moves:
+- Surf
+- Ice Beam
+- Signal Beam
+- Rest
+
+=== GRIMER ===
+Primary Role: Physical Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Black Sludge
+Ability: Stench
+Moves:
+- Sludge Bomb
+- Minimize
+- Disable
+- Toxic
+
+Alternative Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Poison Barb
+Ability: Stench
+Moves:
+- Sludge Bomb
+- Shadow Punch
+- Screech
+- Minimize
+
+=== MUK ===
+Primary Role: Physical Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Stench
+Moves:
+- Sludge Bomb
+- Minimize
+- Toxic
+- Protect
+
+Alternative Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Poison Barb
+Ability: Stench
+Moves:
+- Sludge Bomb
+- Shadow Ball
+- Explosion
+- Screech
+
+=== SHELLDER ===
+Primary Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: NeverMeltIce
+Ability: Shell Armor
+Moves:
+- Clamp
+- Ice Beam
+- Supersonic
+- Protect
+
+Alternative Role: Utility
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Shell Armor
+Moves:
+- Toxic
+- Protect
+- Ice Beam
+- Clamp
+
+=== CLOYSTER ===
+Primary Role: Physical Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Shell Armor
+Moves:
+- Surf
+- Ice Beam
+- Spikes
+- Protect
+
+Alternative Role: Offensive
+Nature: Naughty
+EVs: Atk 252 / SpA 128 / HP 128
+Item: NeverMeltIce
+Ability: Shell Armor
+Moves:
+- Ice Beam
+- Surf
+- Explosion
+- Clamp
+
+=== GASTLY ===
+Primary Role: Special Attacker
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Spell Tag
+Ability: Levitate
+Moves:
+- Shadow Ball
+- Psychic
+- Hypnosis
+- Dream Eater
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Spe 4
+Item: Leftovers
+Ability: Levitate
+Moves:
+- Hypnosis
+- Toxic
+- Protect
+- Night Shade
+
+=== HAUNTER ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Spell Tag
+Ability: Levitate
+Moves:
+- Shadow Ball
+- Psychic
+- Hypnosis
+- Giga Drain
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Spe 4
+Item: Leftovers
+Ability: Levitate
+Moves:
+- Hypnosis
+- Toxic
+- Protect
+- Night Shade
+
+=== GENGAR ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Leftovers
+Ability: Levitate
+Moves:
+- Shadow Ball
+- Psychic
+- Giga Drain
+- Hypnosis
+
+Alternative Role: Utility Attacker
+Nature: Modest
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Spell Tag
+Ability: Levitate
+Moves:
+- Shadow Ball
+- Thunderbolt
+- Ice Punch
+- Hypnosis
+
+=== ONIX ===
+Primary Role: Physical Wall
+Nature: Impish
+EVs: HP 252 / Def 252 / Spe 4
+Item: Hard Stone
+Ability: Rock Head
+Moves:
+- Rock Slide
+- Earthquake
+- Screech
+- Bind
+
+Alternative Role: Utility
+Nature: Careful
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Rock Head
+Moves:
+- Toxic
+- Protect
+- Rock Slide
+- Earthquake
+
+=== DROWZEE ===
+Primary Role: Special Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Twisted Spoon
+Ability: Insomnia
+Moves:
+- Psychic
+- Hypnosis
+- Dream Eater
+- Disable
+
+Alternative Role: Utility
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Insomnia
+Moves:
+- Hypnosis
+- Toxic
+- Protect
+- Psychic
+
+=== HYPNO ===
+Primary Role: Special Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Leftovers
+Ability: Insomnia
+Moves:
+- Psychic
+- Hypnosis
+- Calm Mind
+- Protect
+
+Alternative Role: Support
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Insomnia
+Moves:
+- Hypnosis
+- Toxic
+- Protect
+- Psychic
+
+=== KRABBY ===
+Primary Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Mystic Water
+Ability: Hyper Cutter
+Moves:
+- Crabhammer
+- Vice Grip
+- Swords Dance
+- BubbleBeam
+
+Alternative Role: Utility
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Hyper Cutter
+Moves:
+- Crabhammer
+- Protect
+- Swords Dance
+- Vice Grip
+
+=== KINGLER ===
+Primary Role: Physical Sweeper
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Mystic Water
+Ability: Hyper Cutter
+Moves:
+- Crabhammer
+- Return
+- Rock Slide
+- Swords Dance
+
+Alternative Role: Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Hyper Cutter
+Moves:
+- Crabhammer
+- Protect
+- Swords Dance
+- Return
+
+=== VOLTORB ===
+Primary Role: Speed Utility
+Nature: Timid
+EVs: Spe 252 / HP 252 / SpA 4
+Item: Magnet
+Ability: Soundproof
+Moves:
+- Thunderbolt
+- Thunder Wave
+- Screech
+- Selfdestruct
+
+Alternative Role: Suicide Lead
+Nature: Timid
+EVs: Spe 252 / SpA 252 / HP 4
+Item: Magnet
+Ability: Soundproof
+Moves:
+- Thunderbolt
+- Explosion
+- Thunder Wave
+- Screech
+
+=== ELECTRODE ===
+Primary Role: Speed Control
+Nature: Timid
+EVs: Spe 252 / HP 252 / SpA 4
+Item: Magnet
+Ability: Soundproof
+Moves:
+- Thunderbolt
+- Thunder Wave
+- Light Screen
+- Explosion
+
+Alternative Role: Suicide Lead
+Nature: Timid
+EVs: Spe 252 / SpA 252 / HP 4
+Item: Magnet
+Ability: Soundproof
+Moves:
+- Thunderbolt
+- Explosion
+- Thunder Wave
+- Screech
+
+=== EXEGGCUTE ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Miracle Seed
+Ability: Chlorophyll
+Moves:
+- Giga Drain
+- Psychic
+- Sleep Powder
+- Stun Spore
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Chlorophyll
+Moves:
+- Sleep Powder
+- Leech Seed
+- Psychic
+- Protect
+
+=== EXEGGUTOR ===
+Primary Role: Special Sweeper
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Miracle Seed
+Ability: Chlorophyll
+Moves:
+- Psychic
+- Giga Drain
+- Sleep Powder
+- Sunny Day
+
+Alternative Role: Sun Sweeper
+Nature: Modest
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Miracle Seed
+Ability: Chlorophyll
+Moves:
+- SolarBeam
+- Psychic
+- Sunny Day
+- Sleep Powder
+
+=== CUBONE ===
+Primary Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Thick Club
+Ability: Rock Head
+Moves:
+- Bonemerang
+- Rock Slide
+- Double-Edge
+- Focus Energy
+
+Alternative Role: Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Thick Club
+Ability: Rock Head
+Moves:
+- Bonemerang
+- Rock Slide
+- Protect
+- Toxic
+
+=== MAROWAK ===
+Primary Role: Physical Sweeper
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Thick Club
+Ability: Rock Head
+Moves:
+- Earthquake
+- Rock Slide
+- Double-Edge
+- Swords Dance
+
+Alternative Role: Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Thick Club
+Ability: Rock Head
+Moves:
+- Earthquake
+- Rock Slide
+- Toxic
+- Protect
+
+=== HITMONLEE ===
+Primary Role: Physical Sweeper
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Black Belt
+Ability: Limber
+Moves:
+- High Jump Kick
+- Rock Slide
+- Brick Break
+- Mega Kick
+
+Alternative Role: Glass Cannon
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Choice Band
+Ability: Limber
+Moves:
+- High Jump Kick
+- Rock Slide
+- Double-Edge
+- Hidden Power Ghost
+
+=== HITMONCHAN ===
+Primary Role: Mixed Attacker
+Nature: Mild
+EVs: Atk 128 / SpA 128 / HP 252
+Item: Black Belt
+Ability: Keen Eye
+Moves:
+- Sky Uppercut
+- Ice Punch
+- ThunderPunch
+- Fire Punch
+
+Alternative Role: Physical Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Keen Eye
+Moves:
+- Sky Uppercut
+- Mach Punch
+- Counter
+- Protect
+
+=== LICKITUNG ===
+Primary Role: Special Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Own Tempo
+Moves:
+- Body Slam
+- Ice Beam
+- Thunderbolt
+- Rest
+
+Alternative Role: Utility
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Own Tempo
+Moves:
+- Body Slam
+- Toxic
+- Protect
+- Rest
+
+=== KOFFING ===
+Primary Role: Physical Tank
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: None
+Ability: Levitate
+Moves:
+- Sludge
+- Smokescreen
+- Selfdestruct
+- Toxic
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: None
+Ability: Levitate
+Moves:
+- Toxic
+- Protect
+- Sludge
+- Smokescreen
+
+=== WEEZING ===
+Primary Role: Physical Tank
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Levitate
+Moves:
+- Sludge Bomb
+- Will-O-Wisp
+- Explosion
+- Haze
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Levitate
+Moves:
+- Toxic
+- Protect
+- Sludge Bomb
+- Will-O-Wisp
+
+=== RHYHORN ===
+Primary Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Hard Stone
+Ability: Rock Head
+Moves:
+- Earthquake
+- Rock Slide
+- Megahorn
+- Horn Attack
+
+Alternative Role: Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Rock Head
+Moves:
+- Earthquake
+- Rock Slide
+- Protect
+- Toxic
+
+=== RHYDON ===
+Primary Role: Physical Sweeper
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Hard Stone
+Ability: Rock Head
+Moves:
+- Earthquake
+- Rock Slide
+- Megahorn
+- Double-Edge
+
+Alternative Role: Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Rock Head
+Moves:
+- Earthquake
+- Rock Slide
+- Toxic
+- Protect
+
+=== CHANSEY ===
+Primary Role: Special Wall
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Natural Cure
+Moves:
+- Soft-Boiled
+- Seismic Toss
+- Toxic
+- Thunder Wave
+
+Alternative Role: Support
+Nature: Bold
+EVs: HP 252 / Def 252 / SpD 4
+Item: Leftovers
+Ability: Natural Cure
+Moves:
+- Soft-Boiled
+- Aromatherapy
+- Toxic
+- Seismic Toss
+
+=== TANGELA ===
+Primary Role: Physical Tank
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Chlorophyll
+Moves:
+- Giga Drain
+- Sleep Powder
+- Leech Seed
+- Stun Spore
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Chlorophyll
+Moves:
+- Sleep Powder
+- Toxic
+- Giga Drain
+- Protect
+
+=== KANGASKHAN ===
+Primary Role: Physical Attacker
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Silk Scarf
+Ability: Early Bird
+Moves:
+- Return
+- Earthquake
+- Shadow Ball
+- Fake Out
+
+Alternative Role: Bulky Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Leftovers
+Ability: Early Bird
+Moves:
+- Return
+- Earthquake
+- Rest
+- Shadow Ball
+
+=== HORSEA ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Mystic Water
+Ability: Swift Swim
+Moves:
+- Surf
+- Ice Beam
+- Smokescreen
+- Rain Dance
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Def 4
+Item: Leftovers
+Ability: Swift Swim
+Moves:
+- Surf
+- Toxic
+- Protect
+- Rain Dance
+
+=== SEADRA ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Mystic Water
+Ability: Poison Point
+Moves:
+- Surf
+- Ice Beam
+- Rain Dance
+- DragonBreath
+
+Alternative Role: Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Leftovers
+Ability: Poison Point
+Moves:
+- Surf
+- Toxic
+- Protect
+- Ice Beam
+
+=== GOLDEEN ===
+Primary Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Mystic Water
+Ability: Swift Swim
+Moves:
+- Waterfall
+- Horn Attack
+- Agility
+- Supersonic
+
+Alternative Role: Utility
+Nature: Hardy
+EVs: HP 252 / Spe 252 / Atk 4
+Item: None
+Ability: Swift Swim
+Moves:
+- Supersonic
+- Horn Attack
+- Waterfall
+- Agility
+
+=== SEAKING ===
+Primary Role: Physical Sweeper
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Mystic Water
+Ability: Swift Swim
+Moves:
+- Waterfall
+- Megahorn
+- Return
+- Agility
+
+Alternative Role: Mixed
+Nature: Mild
+EVs: Atk 128 / SpA 128 / Spe 252
+Item: Mystic Water
+Ability: Swift Swim
+Moves:
+- Surf
+- Megahorn
+- Ice Beam
+- Agility
+
+=== STARYU ===
+Primary Role: Special Attacker
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Mystic Water
+Ability: Natural Cure
+Moves:
+- Surf
+- Thunderbolt
+- Ice Beam
+- Recover
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Spe 4
+Item: Leftovers
+Ability: Natural Cure
+Moves:
+- Surf
+- Recover
+- Rapid Spin
+- Thunder Wave
+
+=== STARMIE ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Mystic Water
+Ability: Natural Cure
+Moves:
+- Surf
+- Thunderbolt
+- Ice Beam
+- Psychic
+
+Alternative Role: Utility Sweeper
+Nature: Timid
+EVs: Spe 252 / HP 252 / SpA 4
+Item: Leftovers
+Ability: Natural Cure
+Moves:
+- Surf
+- Recover
+- Thunder Wave
+- Rapid Spin
+
+=== MR_MIME ===
+Primary Role: Special Support
+Nature: Calm
+EVs: HP 252 / SpD 252 / Spe 4
+Item: Leftovers
+Ability: Soundproof
+Moves:
+- Psychic
+- Reflect
+- Light Screen
+- Thunderbolt
+
+Alternative Role: Special Attacker
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Twisted Spoon
+Ability: Soundproof
+Moves:
+- Psychic
+- Thunderbolt
+- Calm Mind
+- Substitute
+
+=== SCYTHER ===
+Primary Role: Physical Sweeper
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Silver Powder
+Ability: Swarm
+Moves:
+- Aerial Ace
+- Slash
+- Swords Dance
+- Steel Wing
+
+Alternative Role: Fast Attacker
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Choice Band
+Ability: Swarm
+Moves:
+- Aerial Ace
+- Return
+- Steel Wing
+- Quick Attack
+
+=== JYNX ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: NeverMeltIce
+Ability: Oblivious
+Moves:
+- Ice Beam
+- Psychic
+- Lovely Kiss
+- Calm Mind
+
+Alternative Role: Utility
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Leftovers
+Ability: Oblivious
+Moves:
+- Ice Beam
+- Psychic
+- Lovely Kiss
+- Substitute
+
+=== ELECTABUZZ ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Magnet
+Ability: Static
+Moves:
+- Thunderbolt
+- Ice Punch
+- Psychic
+- Thunder Wave
+
+Alternative Role: Mixed
+Nature: Naive
+EVs: Atk 128 / SpA 128 / Spe 252
+Item: Magnet
+Ability: Static
+Moves:
+- Thunderbolt
+- Cross Chop
+- Ice Punch
+- Thunder Wave
+
+=== MAGMAR ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Charcoal
+Ability: Flame Body
+Moves:
+- Flamethrower
+- Psychic
+- Confuse Ray
+- Sunny Day
+
+Alternative Role: Mixed
+Nature: Mild
+EVs: SpA 252 / Atk 128 / Spe 128
+Item: Charcoal
+Ability: Flame Body
+Moves:
+- Flamethrower
+- Cross Chop
+- Psychic
+- Sunny Day
+
+=== PINSIR ===
+Primary Role: Physical Sweeper
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Leftovers
+Ability: Hyper Cutter
+Moves:
+- Megahorn
+- Earthquake
+- Rock Slide
+- Swords Dance
+
+Alternative Role: Tank
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Hyper Cutter
+Moves:
+- Megahorn
+- Earthquake
+- Protect
+- Swords Dance
+
+=== TAUROS ===
+Primary Role: Physical Sweeper
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Silk Scarf
+Ability: Intimidate
+Moves:
+- Return
+- Earthquake
+- Rock Slide
+- Hyper Beam
+
+Alternative Role: Bulky Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Leftovers
+Ability: Intimidate
+Moves:
+- Return
+- Earthquake
+- Rest
+- Rock Slide
+
+=== MAGIKARP ===
+Primary Role: Evolution Setup
+Nature: Hardy
+EVs: HP 252 / Spe 252 / Atk 4
+Item: None
+Ability: Swift Swim
+Moves:
+- Splash
+- Tackle
+
+Alternative Role: Sacrifice
+Nature: Hardy
+EVs: HP 252 / Def 252 / SpD 4
+Item: None
+Ability: Swift Swim
+Moves:
+- Splash
+- Tackle
+
+=== GYARADOS ===
+Primary Role: Physical Sweeper
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Leftovers
+Ability: Intimidate
+Moves:
+- Dragon Dance
+- Earthquake
+- Return
+- Surf
+
+Alternative Role: Mixed Attacker
+Nature: Naive
+EVs: Atk 128 / SpA 128 / Spe 252
+Item: Mystic Water
+Ability: Intimidate
+Moves:
+- Surf
+- Ice Beam
+- Earthquake
+- Dragon Dance
+
+=== LAPRAS ===
+Primary Role: Special Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Leftovers
+Ability: Water Absorb
+Moves:
+- Surf
+- Ice Beam
+- Thunderbolt
+- Confuse Ray
+
+Alternative Role: Offensive Tank
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Mystic Water
+Ability: Water Absorb
+Moves:
+- Surf
+- Ice Beam
+- Thunderbolt
+- Psychic
+
+=== DITTO ===
+Primary Role: Utility
+Nature: Hardy
+EVs: HP 252 / Def 128 / SpD 128
+Item: Metal Powder
+Ability: Limber
+Moves:
+- Transform
+
+Alternative Role: Tank Transform
+Nature: Bold
+EVs: HP 252 / Def 252 / SpD 4
+Item: Metal Powder
+Ability: Limber
+Moves:
+- Transform
+
+=== EEVEE ===
+Primary Role: Utility
+Nature: Jolly
+EVs: Spe 252 / Atk 252 / HP 4
+Item: Silk Scarf
+Ability: Run Away
+Moves:
+- Return
+- Quick Attack
+- Bite
+- Sand Attack
+
+Alternative Role: Setup
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Leftovers
+Ability: Run Away
+Moves:
+- Return
+- Shadow Ball
+- Substitute
+- Baton Pass
+
+=== VAPOREON ===
+Primary Role: Special Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Leftovers
+Ability: Water Absorb
+Moves:
+- Surf
+- Ice Beam
+- Wish (simulado con Rest)
+- Protect
+
+Alternative Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Mystic Water
+Ability: Water Absorb
+Moves:
+- Surf
+- Ice Beam
+- Acid Armor
+- Rest
+
+=== JOLTEON ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Magnet
+Ability: Volt Absorb
+Moves:
+- Thunderbolt
+- Thunder Wave
+- Hidden Power Ice
+- Bite
+
+Alternative Role: Utility
+Nature: Calm
+EVs: HP 252 / SpD 252 / Spe 4
+Item: Leftovers
+Ability: Volt Absorb
+Moves:
+- Thunder Wave
+- Toxic
+- Protect
+- Thunderbolt
+
+=== FLAREON ===
+Primary Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Charcoal
+Ability: Flash Fire
+Moves:
+- Flamethrower
+- Return
+- Shadow Ball
+- Quick Attack
+
+Alternative Role: Mixed
+Nature: Mild
+EVs: SpA 252 / Atk 128 / HP 128
+Item: Charcoal
+Ability: Flash Fire
+Moves:
+- Flamethrower
+- Shadow Ball
+- Return
+- Sunny Day
+
+=== PORYGON ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Leftovers
+Ability: Trace
+Moves:
+- Tri Attack
+- Ice Beam
+- Thunderbolt
+- Recover
+
+Alternative Role: Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Leftovers
+Ability: Trace
+Moves:
+- Recover
+- Toxic
+- Ice Beam
+- Tri Attack
+
+=== OMANYTE ===
+Primary Role: Special Attacker
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Mystic Water
+Ability: Swift Swim
+Moves:
+- Surf
+- Ice Beam
+- AncientPower
+- Rain Dance
+
+Alternative Role: Tank
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Swift Swim
+Moves:
+- Surf
+- Toxic
+- Protect
+- Ice Beam
+
+=== OMASTAR ===
+Primary Role: Special Sweeper
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Mystic Water
+Ability: Swift Swim
+Moves:
+- Surf
+- Ice Beam
+- AncientPower
+- Rain Dance
+
+Alternative Role: Tank
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Swift Swim
+Moves:
+- Surf
+- Toxic
+- Protect
+- Ice Beam
+
+=== KABUTO ===
+Primary Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / HP 252 / Spe 4
+Item: Hard Stone
+Ability: Swift Swim
+Moves:
+- AncientPower
+- Slash
+- Surf
+- Protect
+
+Alternative Role: Utility
+Nature: Impish
+EVs: HP 252 / Def 252 / Atk 4
+Item: Leftovers
+Ability: Swift Swim
+Moves:
+- Protect
+- Toxic
+- AncientPower
+- Slash
+
+=== KABUTOPS ===
+Primary Role: Physical Sweeper
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Hard Stone
+Ability: Swift Swim
+Moves:
+- Rock Slide
+- Slash
+- Surf
+- Swords Dance
+
+Alternative Role: Mixed
+Nature: Mild
+EVs: Atk 128 / SpA 128 / Spe 252
+Item: Mystic Water
+Ability: Swift Swim
+Moves:
+- Surf
+- Ice Beam
+- Rock Slide
+- Swords Dance
+
+=== AERODACTYL ===
+Primary Role: Physical Sweeper
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Hard Stone
+Ability: Rock Head
+Moves:
+- Rock Slide
+- Earthquake
+- Aerial Ace
+- Double-Edge
+
+Alternative Role: Fast Utility
+Nature: Jolly
+EVs: Spe 252 / HP 252 / Atk 4
+Item: Leftovers
+Ability: Rock Head
+Moves:
+- Rock Slide
+- Toxic
+- Protect
+- Aerial Ace
+
+=== SNORLAX ===
+Primary Role: Special Tank
+Nature: Careful
+EVs: HP 252 / SpD 252 / Atk 4
+Item: Leftovers
+Ability: Thick Fat
+Moves:
+- Body Slam
+- Shadow Ball
+- Rest
+- Sleep Talk
+
+Alternative Role: Curse Sweeper
+Nature: Adamant
+EVs: HP 252 / Atk 252 / SpD 4
+Item: Leftovers
+Ability: Thick Fat
+Moves:
+- Curse
+- Body Slam
+- Shadow Ball
+- Rest
+
+=== ARTICUNO ===
+Primary Role: Special Sweeper
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: NeverMeltIce
+Ability: Pressure
+Moves:
+- Ice Beam
+- Fly
+- Reflect
+- Rest
+
+Alternative Role: Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Leftovers
+Ability: Pressure
+Moves:
+- Ice Beam
+- Toxic
+- Protect
+- Rest
+
+=== ZAPDOS ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Magnet
+Ability: Pressure
+Moves:
+- Thunderbolt
+- Drill Peck
+- Thunder Wave
+- Light Screen
+
+Alternative Role: Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Leftovers
+Ability: Pressure
+Moves:
+- Thunderbolt
+- Toxic
+- Protect
+- Drill Peck
+
+=== MOLTRES ===
+Primary Role: Special Sweeper
+Nature: Modest
+EVs: SpA 252 / HP 252 / Spe 4
+Item: Charcoal
+Ability: Pressure
+Moves:
+- Flamethrower
+- Fly
+- Sunny Day
+- Fire Blast
+
+Alternative Role: Tank
+Nature: Calm
+EVs: HP 252 / SpD 252 / SpA 4
+Item: Leftovers
+Ability: Pressure
+Moves:
+- Flamethrower
+- Toxic
+- Protect
+- Fly
+
+=== DRATINI ===
+Primary Role: Physical Attacker
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Dragon Fang
+Ability: Shed Skin
+Moves:
+- Dragon Rage
+- Slam
+- Thunder Wave
+- Agility
+
+Alternative Role: Setup
+Nature: Jolly
+EVs: Spe 252 / Atk 252 / HP 4
+Item: Leftovers
+Ability: Shed Skin
+Moves:
+- Dragon Dance
+- Return
+- Thunder Wave
+- Slam
+
+=== DRAGONAIR ===
+Primary Role: Setup Sweeper
+Nature: Jolly
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Leftovers
+Ability: Shed Skin
+Moves:
+- Dragon Dance
+- Return
+- Thunder Wave
+- Ice Beam
+
+Alternative Role: Mixed
+Nature: Mild
+EVs: SpA 252 / Atk 128 / Spe 128
+Item: Mystic Water
+Ability: Shed Skin
+Moves:
+- Surf
+- Ice Beam
+- Thunderbolt
+- Thunder Wave
+
+=== DRAGONITE ===
+Primary Role: Physical Sweeper
+Nature: Adamant
+EVs: Atk 252 / Spe 252 / HP 4
+Item: Leftovers
+Ability: Inner Focus
+Moves:
+- Dragon Dance
+- Earthquake
+- Aerial Ace
+- Rock Slide
+
+Alternative Role: Mixed Sweeper
+Nature: Mild
+EVs: Atk 128 / SpA 128 / Spe 252
+Item: Leftovers
+Ability: Inner Focus
+Moves:
+- Surf
+- Ice Beam
+- Thunderbolt
+- Earthquake
+
+=== MEWTWO ===
+Primary Role: Special Sweeper
+Nature: Timid
+EVs: SpA 252 / Spe 252 / HP 4
+Item: Leftovers
+Ability: Pressure
+Moves:
+- Psychic
+- Ice Beam
+- Thunderbolt
+- Calm Mind
+
+Alternative Role: Tank Sweeper
+Nature: Modest
+EVs: HP 252 / SpA 252 / Spe 4
+Item: Leftovers
+Ability: Pressure
+Moves:
+- Calm Mind
+- Psychic
+- Recover
+- Ice Beam
+
+=== MEW ===
+Primary Role: Utility
+Nature: Bold
+EVs: HP 252 / Def 252 / SpA 4
+Item: Leftovers
+Ability: Synchronize
+Moves:
+- Psychic
+- Soft-Boiled
+- Thunder Wave
+- Toxic
+
+Alternative Role: Mixed Sweeper
+Nature: Naive
+EVs: Atk 128 / SpA 128 / Spe 252
+Item: Leftovers
+Ability: Synchronize
+Moves:
+- Psychic
+- Earthquake
+- Flamethrower
+- Ice Beam

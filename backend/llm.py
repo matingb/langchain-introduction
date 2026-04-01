@@ -14,7 +14,7 @@ from enums import GymLeader
 from gym_leaders import GYM_LEADER_TEAMS
 from models import TeamRecommendation, TeamRequest
 from prompts.prompt import TEAM_RECOMMENDATION_PROMPT
-from rag import search_docs
+from rag import retrieve
 
 
 class RecommendationState(TypedDict):
@@ -35,12 +35,24 @@ def get_gym_leader_team(leader: str) -> List[str]:
         )
     return GYM_LEADER_TEAMS[leader_enum]
 
-TOOLS = [get_gym_leader_team, search_docs]
+TOOLS = [get_gym_leader_team]
 
 
-def build_llm() -> ChatGoogleGenerativeAI:
-    return ChatGroq(model="llama-3.3-70b-versatile", api_key=os.getenv("GROQ_API_KEY"))
+def build_llm() -> ChatGroq:
+    return ChatGroq(
+        model="llama-3.3-70b-versatile",
+        api_key=os.getenv("GROQ_API_KEY"),
+    )
     # return ChatGoogleGenerativeAI(model="gemini-3.1-pro-preview", google_api_key=os.getenv("GOOGLE_API_KEY"))
+
+async def retrieve_node(state: RecommendationState) -> RecommendationState:
+    human_messages = [m for m in state["messages"] if isinstance(m, HumanMessage)]
+    query = str(human_messages[-1].content) if human_messages else ""
+    context = retrieve(query)
+    if not context:
+        return {}
+    return {"messages": [SystemMessage(content=f"Relevant knowledge base information:\n\n{context}")]}
+
 
 async def agent_node(state: RecommendationState) -> RecommendationState:
     response = await build_llm().bind_tools(TOOLS).ainvoke(state["messages"])
@@ -64,10 +76,12 @@ async def structured_output_node(state: RecommendationState) -> RecommendationSt
 @lru_cache(maxsize=1)
 def build_recommendation_graph():
     graph_builder = StateGraph(RecommendationState)
+    graph_builder.add_node("retrieve", retrieve_node)
     graph_builder.add_node("agent", agent_node)
     graph_builder.add_node("tools", ToolNode(TOOLS))
     graph_builder.add_node("structured_output", structured_output_node)
-    graph_builder.add_edge(START, "agent")
+    graph_builder.add_edge(START, "retrieve")
+    graph_builder.add_edge("retrieve", "agent")
     graph_builder.add_conditional_edges("agent", tools_condition, {"tools": "tools", END: "structured_output"})
     graph_builder.add_edge("tools", "agent")
     graph_builder.add_edge("structured_output", END)

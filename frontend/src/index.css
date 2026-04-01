@@ -84,42 +84,50 @@ body {
   letter-spacing: 2px;
 }
 
-.pokemon-card {
+.battle-card {
   position: relative;
+  overflow: visible;
+  z-index: 1;
 }
 
-.pokemon-card-tooltip {
+.battle-card-tooltip {
   position: absolute;
   left: 50%;
   bottom: calc(100% + 12px);
-  width: min(260px, calc(100vw - 48px));
+  width: min(240px, calc(100vw - 56px));
   transform: translateX(-50%);
-  background: #fff9c4;
-  border: 3px solid #222;
-  box-shadow: 4px 4px 0px #222;
-  padding: 12px;
+  background: #dbeafe;
+  border: 3px solid #1e3a8a;
+  box-shadow: 4px 4px 0px #1e3a8a;
+  padding: 10px;
+  text-align: center;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.12s ease;
-  z-index: 20;
+  transition: opacity 0.16s ease;
+  z-index: 9999;
 }
 
-.pokemon-card-tooltip::after {
+.battle-card-tooltip::after {
   content: "";
   position: absolute;
   left: 50%;
   top: 100%;
   width: 12px;
   height: 12px;
-  background: #fff9c4;
-  border-right: 3px solid #222;
-  border-bottom: 3px solid #222;
+  background: #dbeafe;
+  border-right: 3px solid #1e3a8a;
+  border-bottom: 3px solid #1e3a8a;
   transform: translateX(-50%) rotate(45deg);
 }
 
-.pokemon-card:hover .pokemon-card-tooltip,
-.pokemon-card.active .pokemon-card-tooltip {
+.battle-card:hover .battle-card-tooltip,
+.battle-card.active .battle-card-tooltip {
   opacity: 1;
   visibility: visible;
+}
+
+.battle-card:hover,
+.battle-card.active {
+  z-index: 1000;
 }
