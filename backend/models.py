@@ -21,6 +21,16 @@ class TeamMember(BaseModel):
     )
 
 
+class PokemonTeamSelection(BaseModel):
+    team: List[TeamMember] = Field(
+        description="Preliminary team of up to 6 Pokémon selected from the available ones.",
+        max_length=6,
+    )
+    notes: str = Field(
+        description="Very brief debugging note explaining the overall preliminary selection."
+    )
+
+
 class TeamRecommendation(BaseModel):
     team: List[TeamMember] = Field(
         description="Recommended team of up to 6 Pokémon selected from the available ones.",

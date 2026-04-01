@@ -58,3 +58,10 @@ def retrieve(query: str, k: int = 3) -> str:
         return ""
     results = _vectorstore.similarity_search(query, k=k)
     return "\n\n".join(doc.page_content for doc in results)
+
+
+def retrieve_from_source(query: str, source: str, k: int) -> str:
+    if _vectorstore is None:
+        return ""
+    results = _vectorstore.similarity_search(query, k=k, filter={"source": source})
+    return "\n\n".join(doc.page_content for doc in results)
