@@ -1,51 +1,56 @@
 import os
-import re
 from pathlib import Path
 
-from langchain_core.documents import Document
-from langchain_core.vectorstores import InMemoryVectorStore
+from langchain_chroma import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
-DOCS_DIR = Path(__file__).parent / "docs"
+VECTORSTORE_DIR = Path(__file__).parent / ".chroma"
+COLLECTION_NAME = "pokemon_docs"
 
-_SECTION_PATTERN = re.compile(r"^=== (.+?) ===$", re.MULTILINE)
-
-_vectorstore: InMemoryVectorStore | None = None
+_vectorstore: Chroma | None = None
 
 
-def _split_by_sections(text: str, source: str) -> list[Document]:
-    matches = list(_SECTION_PATTERN.finditer(text))
-    documents = []
-    for i, match in enumerate(matches):
-        name = match.group(1)
-        start = match.end()
-        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
-        body = text[start:end].strip()
-        if body:
-            documents.append(
-                Document(
-                    page_content=f"=== {name} ===\n{body}",
-                    metadata={"name": name, "source": source},
-                )
-            )
-    return documents
+def _get_api_key() -> str:
+    api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
+    if not api_key:
+        raise RuntimeError(
+            "Gemini API key not found. Set `GOOGLE_API_KEY` or `GEMINI_API_KEY` before "
+            "starting the API."
+        )
+    return api_key
+
+
+def _build_embeddings() -> GoogleGenerativeAIEmbeddings:
+    return GoogleGenerativeAIEmbeddings(
+        model="models/gemini-embedding-001",
+        api_key=_get_api_key(),
+    )
+
+
+def _open_vectorstore() -> Chroma:
+    return Chroma(
+        collection_name=COLLECTION_NAME,
+        embedding_function=_build_embeddings(),
+        persist_directory=str(VECTORSTORE_DIR),
+    )
 
 
 def init_vectorstore() -> None:
     global _vectorstore
-    docs: list[Document] = []
-    for file_path in sorted(DOCS_DIR.glob("*.txt")):
-        text = file_path.read_text(encoding="utf-8")
-        docs.extend(_split_by_sections(text, file_path.name))
 
-    if not docs:
-        return
+    if not VECTORSTORE_DIR.exists():
+        raise RuntimeError(
+            "RAG index not found. Run `python -m rag_rebuild` from the `backend` directory "
+            "before starting the API."
+        )
 
-    embeddings = GoogleGenerativeAIEmbeddings(
-        model="models/gemini-embedding-001",
-        google_api_key=os.getenv("GOOGLE_API_KEY"),
-    )
-    _vectorstore = InMemoryVectorStore.from_documents(documents=docs, embedding=embeddings)
+    vectorstore = _open_vectorstore()
+    if not vectorstore.get(limit=1)["ids"]:
+        raise RuntimeError(
+            "RAG index is empty or invalid. Run `python -m rag_rebuild` from the `backend` "
+            "directory before starting the API."
+        )
+    _vectorstore = vectorstore
 
 
 def retrieve(query: str, k: int = 3) -> str:
