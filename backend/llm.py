@@ -19,7 +19,6 @@ from rag import retrieve_from_source
 class RecommendationState(TypedDict):
     messages: List[BaseMessage]
     leader: str
-    rival_team: List[str]
     leader_context: str
     pokemon_context: str
     pokemon_selection: PokemonDraftSelection | None
@@ -46,7 +45,7 @@ async def retrieve_leader_node(state: RecommendationState) -> RecommendationStat
 
 async def draft_team_node(state: RecommendationState) -> RecommendationState:
     messages = list(state["messages"])
-    messages.extend(build_draft_team_messages(state["leader_context"], state["rival_team"]))
+    messages.extend(build_draft_team_messages(state["leader_context"]))
     pokemon_selection = await build_llm().with_structured_output(
         PokemonDraftSelection
     ).ainvoke(messages)
@@ -105,7 +104,6 @@ async def get_team_recommendation(request: TeamRequest) -> TeamRecommendation:
         {
             "messages": messages,
             "leader": leader,
-            "rival_team": [],
             "leader_context": "",
             "pokemon_context": "",
             "pokemon_selection": None,

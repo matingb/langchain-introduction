@@ -36,7 +36,7 @@ CONTEXT_MESSAGE_PROMPT = SystemMessagePromptTemplate.from_template(
 )
 
 DRAFT_TEAM_PROMPT = HumanMessagePromptTemplate.from_template(
-    """Select a preliminary list of Pokémon names from the available list. Always select as many as possible, up to a maximum of 6. Use the gym leader strategy context and the rival team to decide.{rival_info}"""
+    """Select a preliminary list of Pokémon names from the available list. Always select as many as possible, up to a maximum of 6. Use the gym leader strategy context to decide."""
 )
 
 FINAL_RECOMMENDATION_PROMPT = HumanMessagePromptTemplate.from_template(
@@ -61,15 +61,12 @@ def build_context_message(title: str, context: str) -> BaseMessage | None:
     return CONTEXT_MESSAGE_PROMPT.format(title=title, context=context)
 
 
-def build_draft_team_messages(
-    leader_context: str, rival_team: list[str]
-) -> list[BaseMessage]:
+def build_draft_team_messages(leader_context: str) -> list[BaseMessage]:
     messages = []
     context_message = build_context_message("Gym Leader strategy context", leader_context)
     if context_message is not None:
         messages.append(context_message)
-    rival_info = f" Rival team: {', '.join(rival_team)}." if rival_team else ""
-    messages.append(DRAFT_TEAM_PROMPT.format(rival_info=rival_info))
+    messages.append(DRAFT_TEAM_PROMPT.format())
     return messages
 
 
