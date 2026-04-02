@@ -18,26 +18,23 @@ class TeamRequest(BaseModel):
 class TeamMember(BaseModel):
     name: PokemonName = Field(description="Name of the Pokémon.")
     reason: str = Field(
-        description="Brief explanation of why this Pokémon is useful against the chosen Gym Leader."
+        description="Explanation of why this Pokémon is useful against the Gym Leader. When relevant, include a specific matchup (e.g. which move to use against a particular rival Pokémon and why). Keep it concise, 4–5 sentences max."
     )
     held_item: str = Field(
-        description="Recommended held item. Only populate if the information is available from context.",
+        description="Recommended held item from context."
     )
     moves: List[str] = Field(
-        description="Recommended moves. Only populate if the information is available from context.",
+        description="All recommended moves available from context. Max 4 moves. Select the moves that are most effective against the Gym Leader id there are more than 4 moves.",
     )
     evs: str = Field(
-        description="Recommended EV spread (e.g. '252 Atk / 4 Def / 252 Spe'). Only populate if the information is available from context.",
+        description="Recommended EV spread (e.g. '252 Atk / 4 Def / 252 Spe').",
     )
 
 
-class PokemonTeamSelection(BaseModel):
-    team: List[TeamMember] = Field(
-        description="Preliminary team of up to 6 Pokémon selected from the available ones.",
+class PokemonDraftSelection(BaseModel):
+    team: List[PokemonName] = Field(
+        description="Preliminary list of up to 6 Pokémon names selected from the available ones. Always select as many as possible.",
         max_length=6,
-    )
-    notes: str = Field(
-        description="Very brief note explaining the overall preliminary selection."
     )
 
 

@@ -211,7 +211,7 @@ export default function App() {
                 onClick={() => setDetailMember(null)}
               >
                 <div
-                  className="relative bg-white border-4 border-black shadow-[8px_8px_0px_#222] w-full max-w-sm p-6 animate-in fade-in zoom-in duration-200"
+                  className="relative bg-white border-4 border-black shadow-[8px_8px_0px_#222] w-full max-w-lg p-6 animate-in fade-in zoom-in duration-200"
                   onClick={(e) => e.stopPropagation()}
                 >
                   <button
