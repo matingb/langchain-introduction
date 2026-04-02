@@ -61,30 +61,10 @@ def build_context_message(title: str, context: str) -> BaseMessage | None:
     return CONTEXT_MESSAGE_PROMPT.format(title=title, context=context)
 
 
-def build_draft_team_messages(
-    leader_context: str, rival_team: list[str]
-) -> list[BaseMessage]:
-    messages = []
-    context_message = build_context_message("Gym Leader strategy context", leader_context)
-    if context_message is not None:
-        messages.append(context_message)
+def build_draft_team_messages(rival_team: list[str]) -> list[BaseMessage]:
     rival_info = f" Rival team: {', '.join(rival_team)}." if rival_team else ""
-    messages.append(DRAFT_TEAM_PROMPT.format(rival_info=rival_info))
-    return messages
+    return [DRAFT_TEAM_PROMPT.format(rival_info=rival_info)]
 
 
-def build_final_recommendation_messages(
-    leader_context: str,
-    pokemon_context: str,
-) -> list[BaseMessage]:
-    messages = []
-    leader_context_message = build_context_message("Gym Leader strategy context", leader_context)
-    if leader_context_message is not None:
-        messages.append(leader_context_message)
-    pokemon_context_message = build_context_message(
-        "Pokémon role context for the selected team", pokemon_context
-    )
-    if pokemon_context_message is not None:
-        messages.append(pokemon_context_message)
-    messages.append(FINAL_RECOMMENDATION_PROMPT.format())
-    return messages
+def build_final_recommendation_messages() -> list[BaseMessage]:
+    return [FINAL_RECOMMENDATION_PROMPT.format()]

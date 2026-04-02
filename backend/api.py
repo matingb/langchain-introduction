@@ -6,18 +6,10 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from llm import get_team_recommendation
 from schemas.team import TeamRecommendation, TeamRequest
-from rag import init_vectorstore
 
 load_dotenv()
 
-
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    init_vectorstore()
-    yield
-
-
-app = FastAPI(title="PokéCoach API", lifespan=lifespan)
+app = FastAPI(title="PokéCoach API")
 
 app.add_middleware(
     CORSMiddleware,
