@@ -1,6 +1,19 @@
+from enum import Enum
 from typing import Dict, List
 
-from enums import GymLeader, PokemonName
+from domain.pokemon import PokemonName
+
+
+class GymLeader(str, Enum):
+    BROCK = "Brock"
+    MISTY = "Misty"
+    LT_SURGE = "Lt. Surge"
+    ERIKA = "Erika"
+    KOGA = "Koga"
+    SABRINA = "Sabrina"
+    BLAINE = "Blaine"
+    GIOVANNI = "Giovanni"
+
 
 GYM_LEADER_TEAMS: Dict[GymLeader, List[str]] = {
     GymLeader.BROCK: [

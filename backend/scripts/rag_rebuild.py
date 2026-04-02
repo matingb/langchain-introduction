@@ -22,7 +22,7 @@ def _get_api_key() -> str:
     if not api_key:
         raise RuntimeError(
             "Gemini API key not found. Export `GOOGLE_API_KEY` or `GEMINI_API_KEY` in the "
-            "shell before running `python -m rag_rebuild`."
+            "shell before running `python -m scripts.rag_rebuild`."
         )
     return api_key
 

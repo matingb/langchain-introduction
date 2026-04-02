@@ -153,14 +153,3 @@ class PokemonName(str, Enum):
     DRAGONITE = "Dragonite"
     MEWTWO = "Mewtwo"
     MEW = "Mew"
-
-
-class GymLeader(str, Enum):
-    BROCK = "Brock"
-    MISTY = "Misty"
-    LT_SURGE = "Lt. Surge"
-    ERIKA = "Erika"
-    KOGA = "Koga"
-    SABRINA = "Sabrina"
-    BLAINE = "Blaine"
-    GIOVANNI = "Giovanni"

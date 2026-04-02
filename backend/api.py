@@ -5,7 +5,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from llm import get_team_recommendation
-from models import TeamRecommendation, TeamRequest
+from schemas.team import TeamRecommendation, TeamRequest
 from rag import init_vectorstore
 
 load_dotenv()

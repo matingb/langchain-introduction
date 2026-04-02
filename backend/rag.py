@@ -40,14 +40,14 @@ def init_vectorstore() -> None:
 
     if not VECTORSTORE_DIR.exists():
         raise RuntimeError(
-            "RAG index not found. Run `python -m rag_rebuild` from the `backend` directory "
+            "RAG index not found. Run `python -m scripts.rag_rebuild` from the `backend` directory "
             "before starting the API."
         )
 
     vectorstore = _open_vectorstore()
     if not vectorstore.get(limit=1)["ids"]:
         raise RuntimeError(
-            "RAG index is empty or invalid. Run `python -m rag_rebuild` from the `backend` "
+            "RAG index is empty or invalid. Run `python -m scripts.rag_rebuild` from the `backend` "
             "directory before starting the API."
         )
     _vectorstore = vectorstore

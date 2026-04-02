@@ -2,7 +2,8 @@ from typing import List
 
 from pydantic import BaseModel, Field
 
-from enums import GymLeader, PokemonName
+from domain.gym_leaders import GymLeader
+from domain.pokemon import PokemonName
 
 
 class TeamRequest(BaseModel):

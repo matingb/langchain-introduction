@@ -1,5 +1,7 @@
 from langchain_chroma import Chroma
+
 from rag import COLLECTION_NAME, VECTORSTORE_DIR
+
 store = Chroma(
     collection_name=COLLECTION_NAME,
     persist_directory=str(VECTORSTORE_DIR),
