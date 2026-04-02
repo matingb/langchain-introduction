@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { POKEMON_LIST, GYM_LEADERS, getPokemonSpriteUrl, getLeaderSpriteUrl } from './data';
-import { Loader2, Swords, RefreshCcw } from 'lucide-react';
+import { Loader2, Swords, RefreshCcw, X } from 'lucide-react';
 
 type TeamMember = {
   name: string;
   reason: string;
+  held_item?: string | null;
+  moves?: string[] | null;
+  evs?: string | null;
 };
 
 type RecommendationResult = {
@@ -19,6 +22,7 @@ export default function App() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [result, setResult] = useState<RecommendationResult | null>(null);
   const [activeTeamMember, setActiveTeamMember] = useState<string | null>(null);
+  const [detailMember, setDetailMember] = useState<TeamMember | null>(null);
 
   const togglePokemon = (pokemon: string) => {
     setSelectedPokemon(prev => 
@@ -52,6 +56,7 @@ export default function App() {
       const data: RecommendationResult = await response.json();
       setResult(data);
       setActiveTeamMember(null);
+      setDetailMember(null);
     } catch (error) {
       console.error("Error fetching ideal team:", error);
     } finally {
@@ -62,6 +67,7 @@ export default function App() {
   const resetSelection = () => {
     setResult(null);
     setActiveTeamMember(null);
+    setDetailMember(null);
   };
 
   return (
@@ -115,7 +121,6 @@ export default function App() {
             <div className="bg-blue-50 p-3 md:p-4 border-4 border-blue-900 rounded-lg shadow-[4px_4px_0px_#1e3a8a]">
               <div className="flex justify-between items-end mb-3 border-b-4 border-blue-900 pb-2">
                 <h3 className="text-blue-900 uppercase text-xs md:text-sm font-bold">Your Squad</h3>
-                <span className="text-[8px] text-blue-700 uppercase">Hover for roles</span>
               </div>
               <div className="grid grid-cols-2 gap-3 md:gap-4">
                 {result.team.map((member, idx) => {
@@ -127,9 +132,9 @@ export default function App() {
                       key={cardKey}
                       type="button"
                       className={`battle-card retro-box group h-28 md:h-32 flex flex-col items-center justify-center bg-white border-blue-900 ${isActive ? 'active' : ''}`}
-                      onClick={() => setActiveTeamMember((current) => current === cardKey ? null : cardKey)}
+                      onClick={() => setDetailMember(member)}
                       onMouseEnter={() => setActiveTeamMember(cardKey)}
-                      onMouseLeave={() => setActiveTeamMember((current) => current === cardKey ? null : current)}
+                      onMouseLeave={() => setActiveTeamMember(null)}
                     >
                       <div className="flex flex-col items-center justify-center p-2">
                         <img
@@ -156,7 +161,6 @@ export default function App() {
             <div className="bg-red-50 p-3 md:p-4 border-4 border-red-900 rounded-lg shadow-[4px_4px_0px_#7f1d1d]">
               <div className="flex justify-between items-end mb-3 border-b-4 border-red-900 pb-2">
                 <h3 className="text-red-900 uppercase text-xs md:text-sm font-bold">Rival Squad</h3>
-                <span className="text-[8px] text-red-700 uppercase">Target</span>
               </div>
               <div className="grid grid-cols-2 gap-3 md:gap-4">
                 {result.rival_team.map((pokemonName, idx) => {
@@ -198,6 +202,74 @@ export default function App() {
             <RefreshCcw size={18} />
             Start Over
           </button>
+
+          {detailMember && (() => {
+            const dexNumber = POKEMON_LIST.indexOf(detailMember.name) + 1;
+            return (
+              <div
+                className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60"
+                onClick={() => setDetailMember(null)}
+              >
+                <div
+                  className="relative bg-white border-4 border-black shadow-[8px_8px_0px_#222] w-full max-w-sm p-6 animate-in fade-in zoom-in duration-200"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <button
+                    onClick={() => setDetailMember(null)}
+                    className="absolute top-3 right-3 border-2 border-black p-1 hover:bg-black hover:text-white transition-colors"
+                    aria-label="Close"
+                  >
+                    <X size={14} />
+                  </button>
+
+                  <div className="flex flex-col items-center mb-4">
+                    <img
+                      src={getPokemonSpriteUrl(dexNumber)}
+                      alt={detailMember.name}
+                      className="w-24 h-24 pixelated"
+                      style={{ imageRendering: 'pixelated' }}
+                    />
+                    <h3 className="retro-title text-xl uppercase mt-1">{detailMember.name}</h3>
+                  </div>
+
+                  <div className="space-y-3 text-[11px] uppercase">
+                    <div className="border-2 border-black p-3">
+                      <p className="font-bold text-gray-500 mb-1">Role</p>
+                      <p className="leading-relaxed normal-case">{detailMember.reason}</p>
+                    </div>
+
+                    {detailMember.held_item && (
+                      <div className="border-2 border-black p-3">
+                        <p className="font-bold text-gray-500 mb-1">Held Item</p>
+                        <p>{detailMember.held_item}</p>
+                      </div>
+                    )}
+
+                    {detailMember.moves && detailMember.moves.length > 0 && (
+                      <div className="border-2 border-black p-3">
+                        <p className="font-bold text-gray-500 mb-1">Moves</p>
+                        <ul className="space-y-1">
+                          {detailMember.moves.map((move, i) => (
+                            <li key={i} className="flex items-center gap-2">
+                              <span className="w-4 h-4 bg-black text-white flex items-center justify-center text-[9px] shrink-0">{i + 1}</span>
+                              {move}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {detailMember.evs && (
+                      <div className="border-2 border-black p-3">
+                        <p className="font-bold text-gray-500 mb-1">EV Spread</p>
+                        <p>{detailMember.evs}</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
         </div>
       ) : (
         <div className="space-y-12">

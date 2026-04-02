@@ -3,8 +3,10 @@ from functools import lru_cache
 from typing import List, TypedDict
 
 from langchain_core.messages import BaseMessage, HumanMessage, SystemMessage
+from langchain_core.tools import tool
 from langchain_groq import ChatGroq
 from langgraph.graph import END, START, StateGraph
+from langgraph.prebuilt import ToolNode, tools_condition
 from langsmith import traceable
 
 from enums import GymLeader
@@ -25,6 +27,7 @@ class RecommendationState(TypedDict):
     recommendation: TeamRecommendation | None
 
 
+@tool
 def get_gym_leader_team(leader: str) -> List[str]:
     """Returns the Pokémon team used by a Gym Leader in Pokémon FireRed.
     Use this to know which Pokémon you will face before recommending a counter-team.
@@ -37,6 +40,9 @@ def get_gym_leader_team(leader: str) -> List[str]:
             f"Unknown gym leader: {leader}. Use one of: {', '.join(g.value for g in GymLeader)}."
         )
     return GYM_LEADER_TEAMS[leader_enum]
+
+
+TOOLS = [get_gym_leader_team]
 
 
 def build_llm() -> ChatGroq:
@@ -75,13 +81,15 @@ async def draft_team_node(state: RecommendationState) -> RecommendationState:
     )
     if leader_context_message is not None:
         messages.append(leader_context_message)
+    rival_team = state["rival_team"]
+    rival_info = f" Rival team: {', '.join(rival_team)}." if rival_team else ""
     messages.append(
         HumanMessage(
             content=(
                 "Select a preliminary team of up to 6 Pokémon from the available list. "
                 "Use the gym leader strategy context and the rival team. "
-                "Keep each reason brief for debugging. "
-                f"Rival team: {', '.join(state['rival_team'])}."
+                "Keep each reason brief for debugging."
+                + rival_info
             )
         )
     )
@@ -125,7 +133,6 @@ async def structured_output_node(state: RecommendationState) -> RecommendationSt
                 f"Rival team: {', '.join(state['rival_team'])}\n"
                 f"Pokemon selection: {state['pokemon_selection'].model_dump_json() if state['pokemon_selection'] else 'None'}\n\n"
                 "Return the final answer as a structured team recommendation. "
-                "Include rival_team with the Gym Leader's Pokemon. "
                 "Only choose Pokemon from the provided available list for team."
             )
         )
@@ -139,11 +146,13 @@ def build_recommendation_graph():
     graph_builder = StateGraph(RecommendationState)
     graph_builder.add_node("retrieve_leader", retrieve_leader_node)
     graph_builder.add_node("draft_team", draft_team_node)
+    graph_builder.add_node("tools", ToolNode(TOOLS))
     graph_builder.add_node("retrieve_pokemon", retrieve_pokemon_node)
     graph_builder.add_node("structured_output", structured_output_node)
     graph_builder.add_edge(START, "retrieve_leader")
     graph_builder.add_edge("retrieve_leader", "draft_team")
-    graph_builder.add_edge("draft_team", "retrieve_pokemon")
+    graph_builder.add_conditional_edges("draft_team", tools_condition, {"tools": "tools", END: "retrieve_pokemon"})
+    graph_builder.add_edge("tools", "draft_team")
     graph_builder.add_edge("retrieve_pokemon", "structured_output")
     graph_builder.add_edge("structured_output", END)
     return graph_builder.compile()
@@ -152,7 +161,6 @@ def build_recommendation_graph():
 async def get_team_recommendation(request: TeamRequest) -> TeamRecommendation:
     available = ", ".join(p.value for p in request.available_pokemon)
     leader = request.leader_to_beat.value
-    rival_team = get_gym_leader_team(leader)
 
     messages = [
         SystemMessage(content=TEAM_RECOMMENDATION_PROMPT),
@@ -169,7 +177,7 @@ async def get_team_recommendation(request: TeamRequest) -> TeamRecommendation:
             "messages": messages,
             "available": available,
             "leader": leader,
-            "rival_team": rival_team,
+            "rival_team": [],
             "leader_context": "",
             "pokemon_context": "",
             "pokemon_selection": None,

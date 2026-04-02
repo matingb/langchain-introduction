@@ -19,6 +19,15 @@ class TeamMember(BaseModel):
     reason: str = Field(
         description="Brief explanation of why this Pokémon is useful against the chosen Gym Leader."
     )
+    held_item: str = Field(
+        description="Recommended held item. Only populate if the information is available from context.",
+    )
+    moves: List[str] = Field(
+        description="Recommended moves. Only populate if the information is available from context.",
+    )
+    evs: str = Field(
+        description="Recommended EV spread (e.g. '252 Atk / 4 Def / 252 Spe'). Only populate if the information is available from context.",
+    )
 
 
 class PokemonTeamSelection(BaseModel):
@@ -27,7 +36,7 @@ class PokemonTeamSelection(BaseModel):
         max_length=6,
     )
     notes: str = Field(
-        description="Very brief debugging note explaining the overall preliminary selection."
+        description="Very brief note explaining the overall preliminary selection."
     )
 
 
