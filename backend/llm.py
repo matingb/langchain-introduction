@@ -24,5 +24,3 @@ gym_leader = "Blaine"
 agent = build_llm()
 response = agent.invoke(build_initial_recommendation_messages(available, gym_leader))
 print("\n\n" + response.content)
-
-

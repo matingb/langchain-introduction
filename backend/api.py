@@ -1,10 +1,9 @@
-from contextlib import asynccontextmanager
-
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from llm import get_team_recommendation
+from llm import agent
+from prompts.prompt import build_initial_recommendation_messages
 from schemas.team import TeamRecommendation, TeamRequest
 
 load_dotenv()
@@ -22,6 +21,6 @@ app.add_middleware(
 @app.post("/recommend-team", response_model=TeamRecommendation)
 async def recommend_team(request: TeamRequest) -> TeamRecommendation:
     try:
-        return await get_team_recommendation(request)
+        return await agent.invoke(build_initial_recommendation_messages(request.available_pokemon, request.leader_to_beat))
     except Exception as exc:
         raise HTTPException(status_code=500, detail=str(exc)) from exc
